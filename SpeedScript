@@ -1,9 +1,5 @@
 while true do
-local PlayerSpeed = _G.PlayerSpeedDMT
-local JumpPower = _G.JumpPowerDMT
-local customlegbroketext = _G.customlegbroketextDMT
-----------------------------------
-if game.Players.LocalPlayer.PlayerGui:WaitForChild("Input") then
+if game.Players.LocalPlayer.PlayerGui.Input then
 	game.Players.LocalPlayer.PlayerGui.Input:Destroy()
 	local ScreenGui = Instance.new("ScreenGui")
 	local legbroken = Instance.new("ScreenGui")
@@ -22,7 +18,7 @@ if game.Players.LocalPlayer.PlayerGui:WaitForChild("Input") then
 	legbroken_2.Position = UDim2.new(0.5, -100, 0.699999988, 60)
 	legbroken_2.Size = UDim2.new(0, 200, 0, 50)
 	legbroken_2.Font = Enum.Font.ArialBold
-	legbroken_2.Text = customlegbroketext
+	legbroken_2.Text = _G.customlegbroketextDMT
 	legbroken_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 	legbroken_2.TextSize = 18.000
 	legbroken_2.TextStrokeTransparency = 0.500
@@ -57,7 +53,7 @@ if game.Players.LocalPlayer.PlayerGui:WaitForChild("Input") then
 				local l__Name__6 = p1.KeyCode.Name;
 				if l__Name__6 == "Space" then
 					if tick() - u1 >= 0.8 then
-						l__Humanoid__5.JumpPower = JumpPower;
+						l__Humanoid__5.JumpPower = _G.JumpPowerDMT;
 						l__Humanoid__5.Jump = true;
 						u1 = tick();
 						wait();
@@ -124,7 +120,7 @@ if game.Players.LocalPlayer.PlayerGui:WaitForChild("Input") then
 			if l__Humanoid__5.Health > 0 and not u5 then
 				if v1:IsKeyDown("LeftShift") and not u6 then
 					if u2 == 0 then
-						l__Humanoid__5.WalkSpeed = PlayerSpeed;
+						l__Humanoid__5.WalkSpeed = _G.PlayerSpeedDMT;
 						return;
 					end;
 					if u2 == 1 then
@@ -139,33 +135,33 @@ if game.Players.LocalPlayer.PlayerGui:WaitForChild("Input") then
 					end;
 				elseif u6 then
 					if u2 == 0 then
-						l__Humanoid__5.WalkSpeed = PlayerSpeed;
+						l__Humanoid__5.WalkSpeed = _G.PlayerSpeedDMT;
 						return;
 					end;
 					if u2 == 1 then
-						l__Humanoid__5.WalkSpeed = PlayerSpeed;
+						l__Humanoid__5.WalkSpeed = _G.PlayerSpeedDMT;
 						return;
 					end;
 					if u2 == 2 then
-						l__Humanoid__5.WalkSpeed = PlayerSpeed;
+						l__Humanoid__5.WalkSpeed = _G.PlayerSpeedDMT;
 						return;
 					end;
 				else
 					if u2 == 0 then
-						l__Humanoid__5.WalkSpeed = PlayerSpeed;
+						l__Humanoid__5.WalkSpeed = _G.PlayerSpeedDMT;
 						return;
 					end;
 					if u2 == 1 then
-						l__Humanoid__5.WalkSpeed = PlayerSpeed;
+						l__Humanoid__5.WalkSpeed = _G.PlayerSpeedDMT;
 						return;
 					end;
 					if u2 == 2 then
-						l__Humanoid__5.WalkSpeed = PlayerSpeed;
+						l__Humanoid__5.WalkSpeed = _G.PlayerSpeedDMT;
 						return;
 					end;
 				end;
 			else
-				l__Humanoid__5.WalkSpeed = PlayerSpeed;
+				l__Humanoid__5.WalkSpeed = _G.PlayerSpeedDMT;
 				if l__Humanoid__5.Health <= 0 and not u5 then
 					l__Humanoid__5.AutoRotate = false;
 				end;
@@ -175,6 +171,7 @@ if game.Players.LocalPlayer.PlayerGui:WaitForChild("Input") then
 	coroutine.wrap(SCXX_fake_script)()
 	ScreenGui:Destroy()
 else print('Failed to find what we need, reset your character and see if your speed increases if not execute again!')
+    script:Destroy()
 	end
 	wait()
 	end
