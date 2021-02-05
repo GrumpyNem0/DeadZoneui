@@ -1,4 +1,4 @@
-local PlayerSpeed = "45"
+local PlayerSpeed = "40"
 local JumpPower = "80"
 local customlegbroketext = "ur leg broke lol"
 ----------------------------------
