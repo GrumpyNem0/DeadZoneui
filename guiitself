@@ -219,7 +219,7 @@ DupeText.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
 DupeText.BorderSizePixel = 0
 DupeText.Size = UDim2.new(0, 200, 0, 50)
 DupeText.Font = Enum.Font.SourceSans
-DupeText.Text = "SPEED"
+DupeText.Text = "DUPE"
 DupeText.TextColor3 = Color3.fromRGB(0, 0, 0)
 DupeText.TextScaled = true
 DupeText.TextSize = 14.000
@@ -231,7 +231,7 @@ DupeON.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
 DupeON.BorderSizePixel = 0
 DupeON.Size = UDim2.new(0, 200, 0, 50)
 DupeON.Font = Enum.Font.SourceSans
-DupeON.Text = "SET"
+DupeON.Text = "ON"
 DupeON.TextColor3 = Color3.fromRGB(0, 0, 0)
 DupeON.TextScaled = true
 DupeON.TextSize = 14.000
@@ -243,7 +243,7 @@ DupeOFF.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
 DupeOFF.BorderSizePixel = 0
 DupeOFF.Size = UDim2.new(0, 200, 0, 50)
 DupeOFF.Font = Enum.Font.SourceSans
-DupeOFF.Text = "SET"
+DupeOFF.Text = "OFF"
 DupeOFF.TextColor3 = Color3.fromRGB(0, 0, 0)
 DupeOFF.TextScaled = true
 DupeOFF.TextSize = 14.000
@@ -337,13 +337,13 @@ Self_3.ImageColor3 = Color3.fromRGB(105, 0, 158)
 
 -- Scripts:
 
-local function SDLLX_fake_script() -- Title.LocalScript 
+local function NHPDB_fake_script() -- Title.LocalScript 
 	local script = Instance.new('LocalScript', Title)
 
 	_G.MultiToolTitle = script.Parent
 end
-coroutine.wrap(SDLLX_fake_script)()
-local function RZZIJMB_fake_script() -- SpeedButton.BttnScript 
+coroutine.wrap(NHPDB_fake_script)()
+local function TSCYWM_fake_script() -- SpeedButton.BttnScript 
 	local script = Instance.new('LocalScript', SpeedButton)
 
 	_G.PlayerSpeedDMT = "22"
@@ -351,8 +351,8 @@ local function RZZIJMB_fake_script() -- SpeedButton.BttnScript
 	_G.PlayerSpeedDMT = script.Parent.Parent.SpeedBox.Text
 	end)
 end
-coroutine.wrap(RZZIJMB_fake_script)()
-local function PUXIQGA_fake_script() -- JumpButton.BttnScript 
+coroutine.wrap(TSCYWM_fake_script)()
+local function PVQMTPG_fake_script() -- JumpButton.BttnScript 
 	local script = Instance.new('LocalScript', JumpButton)
 
 	_G.JumpPowerDMT = "26"
@@ -360,50 +360,49 @@ local function PUXIQGA_fake_script() -- JumpButton.BttnScript
 	_G.JumpPowerDMT = script.Parent.Parent.JumpBox.Text
 	end)
 end
-coroutine.wrap(PUXIQGA_fake_script)()
-local function XPVQIW_fake_script() -- DupeON.BttnScript 
+coroutine.wrap(PVQMTPG_fake_script)()
+local function RMDR_fake_script() -- DupeON.BttnScript 
 	local script = Instance.new('LocalScript', DupeON)
 
 	script.parent.MouseButton1Click:Connect(function()
 		_G.DupeDMT = true
+		while _G.DupeDMT do
+			wait(0.1)
+			game.ReplicatedStorage.RemoteFunctions.MoveItem:InvokeServer(47,48)
+			game.ReplicatedStorage.RemoteFunctions.MoveItem:InvokeServer(48,47)
+		end
 	end)
 end
-coroutine.wrap(XPVQIW_fake_script)()
-local function FYAGX_fake_script() -- DupeOFF.BttnScript 
+coroutine.wrap(RMDR_fake_script)()
+local function BJPFXAX_fake_script() -- DupeOFF.BttnScript 
 	local script = Instance.new('LocalScript', DupeOFF)
 
 	script.parent.MouseButton1Click:Connect(function()
 		_G.DupeDMT = false
 	end)
 end
-coroutine.wrap(FYAGX_fake_script)()
-local function XSNM_fake_script() -- Speed.LocalScript 
+coroutine.wrap(BJPFXAX_fake_script)()
+local function QYMDFL_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/SpeedScript'))()
 	end)
 end
-coroutine.wrap(XSNM_fake_script)()
-local function CESO_fake_script() -- PageHolder.glb 
+coroutine.wrap(QYMDFL_fake_script)()
+local function UNNV_fake_script() -- PageHolder.glb 
 	local script = Instance.new('LocalScript', PageHolder)
 
 	script.Parent.Self.Visible = false
 	script.Parent.Random.Visible = false
 	--
-	_G.DupeDMT = false
-	while _G.DupeDMT==true do
-		wait(0.1)
-		game.ReplicatedStorage.RemoteFunctions.MoveItem:InvokeServer(47,48)
-		game.ReplicatedStorage.RemoteFunctions.MoveItem:InvokeServer(48,47)
-	end
 	--
 	_G.Self = script.Parent.Self
 	_G.Rando = script.Parent.Random
 	_G.customlegbroketextDMT="haha u broke leg nerd (leg broken use a splint to fix.) -Nemo."
 end
-coroutine.wrap(CESO_fake_script)()
-local function PXFAM_fake_script() -- Self_2.LocalScript 
+coroutine.wrap(UNNV_fake_script)()
+local function CSTHB_fake_script() -- Self_2.LocalScript 
 	local script = Instance.new('LocalScript', Self_2)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -412,8 +411,8 @@ local function PXFAM_fake_script() -- Self_2.LocalScript
 		_G.Rando.Visible = false
 	end)
 end
-coroutine.wrap(PXFAM_fake_script)()
-local function JQHMY_fake_script() -- Self_3.LocalScript 
+coroutine.wrap(CSTHB_fake_script)()
+local function PIVBWJ_fake_script() -- Self_3.LocalScript 
 	local script = Instance.new('LocalScript', Self_3)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -422,16 +421,16 @@ local function JQHMY_fake_script() -- Self_3.LocalScript
 		_G.Rando.Visible = true
 	end)
 end
-coroutine.wrap(JQHMY_fake_script)()
-local function YOBKN_fake_script() -- MultiTool.Loadable 
+coroutine.wrap(PIVBWJ_fake_script)()
+local function MUKFNAX_fake_script() -- MultiTool.Loadable 
 	local script = Instance.new('LocalScript', MultiTool)
 
 	--gamecheck
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/GameCheck'))()
 	--
 end
-coroutine.wrap(YOBKN_fake_script)()
-local function TRPRBE_fake_script() -- MultiTool.Draggable 
+coroutine.wrap(MUKFNAX_fake_script)()
+local function GYPL_fake_script() -- MultiTool.Draggable 
 	local script = Instance.new('LocalScript', MultiTool)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -474,4 +473,4 @@ local function TRPRBE_fake_script() -- MultiTool.Draggable
 		end
 	end)
 end
-coroutine.wrap(TRPRBE_fake_script)()
+coroutine.wrap(GYPL_fake_script)()
