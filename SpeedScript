@@ -1,5 +1,5 @@
 while true do
-	if game.Players.LocalPlayer.PlayerGui.Input then
+	if game.Players.LocalPlayer.PlayerGui:FindFirstChild("Input") then
 		game.Players.LocalPlayer.PlayerGui.Input:Destroy()
 		local ScreenGui = Instance.new("ScreenGui")
 		local legbroken = Instance.new("ScreenGui")
