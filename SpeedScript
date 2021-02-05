@@ -1,6 +1,7 @@
-local PlayerSpeed = "36"
-local JumpPower = "80"
-local customlegbroketext = "ur leg broke lol"
+while true do
+local PlayerSpeed = _G.PlayerSpeedDMT
+local JumpPower = _G.JumpPowerDMT
+local customlegbroketext = _G.customlegbroketextDMT
 ----------------------------------
 if game.Players.LocalPlayer.PlayerGui:WaitForChild("Input") then
 	game.Players.LocalPlayer.PlayerGui.Input:Destroy()
@@ -174,4 +175,6 @@ if game.Players.LocalPlayer.PlayerGui:WaitForChild("Input") then
 	coroutine.wrap(SCXX_fake_script)()
 	ScreenGui:Destroy()
 else print('Failed to find what we need, reset your character and see if your speed increases if not execute again!')
-end
+	end
+	wait()
+	end
