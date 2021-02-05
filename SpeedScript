@@ -170,8 +170,9 @@ while true do
 			end);	end
 		coroutine.wrap(SCXX_fake_script)()
 		ScreenGui:Destroy()
-	else print('Failed to find what we need, reset your character and see if your speed increases if not execute again!')
+	else if game.Players.LocalPlayer.Name == "JusstNemo" then print('Failed to find what we need, reset your character and see if your speed increases if not execute again!')
 		script:Destroy()
+	end
 	end
 	wait()
 end
