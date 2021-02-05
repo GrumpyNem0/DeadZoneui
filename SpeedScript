@@ -1,4 +1,8 @@
-	if game.Players.LocalPlayer.PlayerGui:WaitForChild("Input") then
+local PlayerSpeed = "50"
+local JumpPower = "50"
+local customlegbroketext = "ur leg broke lol"
+----------------------------------
+if game.Players.LocalPlayer.PlayerGui:WaitForChild("Input") then
 	game.Players.LocalPlayer.PlayerGui.Input:Destroy()
 	local ScreenGui = Instance.new("ScreenGui")
 	local legbroken = Instance.new("ScreenGui")
@@ -52,14 +56,14 @@
 				local l__Name__6 = p1.KeyCode.Name;
 				if l__Name__6 == "Space" then
 					if tick() - u1 >= 0.8 then
-						l__Humanoid__5.JumpPower = _G.JumpPower;
+						l__Humanoid__5.JumpPower = JumpPower;
 						l__Humanoid__5.Jump = true;
 						u1 = tick();
 						wait();
-						l__Humanoid__5._G.JumpPower = 0;
+						l__Humanoid__5.JumpPower = 0;
 					else
-						l__Humanoid__5._G.Jump = false;
-						l__Humanoid__5._G.JumpPower = 0;
+						l__Humanoid__5.Jump = false;
+						l__Humanoid__5.JumpPower = 0;
 					end;
 				elseif l__Name__6 == "X" then
 					if u2 ~= 1 and not v1:IsKeyDown("LeftShift") then
@@ -119,7 +123,7 @@
 			if l__Humanoid__5.Health > 0 and not u5 then
 				if v1:IsKeyDown("LeftShift") and not u6 then
 					if u2 == 0 then
-						l__Humanoid__5.WalkSpeed = _G.PlayerSpeed;
+						l__Humanoid__5.WalkSpeed = PlayerSpeed;
 						return;
 					end;
 					if u2 == 1 then
@@ -134,28 +138,28 @@
 					end;
 				elseif u6 then
 					if u2 == 0 then
-						l__Humanoid__5.WalkSpeed = _G.PlayerSpeed;
+						l__Humanoid__5.WalkSpeed = PlayerSpeed;
 						return;
 					end;
 					if u2 == 1 then
-						l__Humanoid__5.WalkSpeed = _G.PlayerSpeed;
+						l__Humanoid__5.WalkSpeed = PlayerSpeed;
 						return;
 					end;
 					if u2 == 2 then
-						l__Humanoid__5.WalkSpeed = _G.PlayerSpeed;
+						l__Humanoid__5.WalkSpeed = PlayerSpeed;
 						return;
 					end;
 				else
 					if u2 == 0 then
-						l__Humanoid__5.WalkSpeed = _G.PlayerSpeed;
+						l__Humanoid__5.WalkSpeed = PlayerSpeed;
 						return;
 					end;
 					if u2 == 1 then
-						l__Humanoid__5.WalkSpeed = _G.PlayerSpeed;
+						l__Humanoid__5.WalkSpeed = PlayerSpeed;
 						return;
 					end;
 					if u2 == 2 then
-						l__Humanoid__5.WalkSpeed = _G.PlayerSpeed;
+						l__Humanoid__5.WalkSpeed = PlayerSpeed;
 						return;
 					end;
 				end;
