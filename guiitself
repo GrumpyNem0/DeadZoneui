@@ -3,7 +3,7 @@
 
 -- Instances:
 
-local ScreenGui = Instance.new("ScreenGui")
+local DMT = Instance.new("ScreenGui")
 local MultiTool = Instance.new("Frame")
 local BackgroundFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
@@ -24,6 +24,9 @@ local SpeedButton = Instance.new("TextButton")
 local JumpText = Instance.new("TextLabel")
 local JumpBox = Instance.new("TextBox")
 local JumpButton = Instance.new("TextButton")
+local DupeText = Instance.new("TextLabel")
+local DupeON = Instance.new("TextButton")
+local DupeOFF = Instance.new("TextButton")
 local ScriptButtons = Instance.new("Frame")
 local Speed = Instance.new("TextButton")
 local UIListLayout = Instance.new("UIListLayout")
@@ -40,11 +43,12 @@ local Self_3 = Instance.new("ImageButton")
 
 --Properties:
 
-ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+DMT.Name = "DMT"
+DMT.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DMT.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 MultiTool.Name = "MultiTool"
-MultiTool.Parent = ScreenGui
+MultiTool.Parent = DMT
 MultiTool.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MultiTool.BackgroundTransparency = 1.000
 MultiTool.Position = UDim2.new(0.341752172, 0, 0.391100705, 0)
@@ -209,6 +213,42 @@ JumpButton.TextScaled = true
 JumpButton.TextSize = 14.000
 JumpButton.TextWrapped = true
 
+DupeText.Name = "DupeText"
+DupeText.Parent = Edit
+DupeText.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+DupeText.BorderSizePixel = 0
+DupeText.Size = UDim2.new(0, 200, 0, 50)
+DupeText.Font = Enum.Font.SourceSans
+DupeText.Text = "SPEED"
+DupeText.TextColor3 = Color3.fromRGB(0, 0, 0)
+DupeText.TextScaled = true
+DupeText.TextSize = 14.000
+DupeText.TextWrapped = true
+
+DupeON.Name = "DupeON"
+DupeON.Parent = Edit
+DupeON.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+DupeON.BorderSizePixel = 0
+DupeON.Size = UDim2.new(0, 200, 0, 50)
+DupeON.Font = Enum.Font.SourceSans
+DupeON.Text = "SET"
+DupeON.TextColor3 = Color3.fromRGB(0, 0, 0)
+DupeON.TextScaled = true
+DupeON.TextSize = 14.000
+DupeON.TextWrapped = true
+
+DupeOFF.Name = "DupeOFF"
+DupeOFF.Parent = Edit
+DupeOFF.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+DupeOFF.BorderSizePixel = 0
+DupeOFF.Size = UDim2.new(0, 200, 0, 50)
+DupeOFF.Font = Enum.Font.SourceSans
+DupeOFF.Text = "SET"
+DupeOFF.TextColor3 = Color3.fromRGB(0, 0, 0)
+DupeOFF.TextScaled = true
+DupeOFF.TextSize = 14.000
+DupeOFF.TextWrapped = true
+
 ScriptButtons.Name = "ScriptButtons"
 ScriptButtons.Parent = Self
 ScriptButtons.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
@@ -297,13 +337,13 @@ Self_3.ImageColor3 = Color3.fromRGB(105, 0, 158)
 
 -- Scripts:
 
-local function RSEFGH_fake_script() -- Title.LocalScript 
+local function EIJWD_fake_script() -- Title.LocalScript 
 	local script = Instance.new('LocalScript', Title)
 
 	_G.MultiToolTitle = script.Parent
 end
-coroutine.wrap(RSEFGH_fake_script)()
-local function XQGEAWB_fake_script() -- SpeedButton.BttnScript 
+coroutine.wrap(EIJWD_fake_script)()
+local function INHP_fake_script() -- SpeedButton.BttnScript 
 	local script = Instance.new('LocalScript', SpeedButton)
 
 	_G.PlayerSpeedDMT = "22"
@@ -311,8 +351,8 @@ local function XQGEAWB_fake_script() -- SpeedButton.BttnScript
 	_G.PlayerSpeedDMT = script.Parent.Parent.SpeedBox.Text
 	end)
 end
-coroutine.wrap(XQGEAWB_fake_script)()
-local function DMWROQ_fake_script() -- JumpButton.BttnScript 
+coroutine.wrap(INHP_fake_script)()
+local function HJNTCVQ_fake_script() -- JumpButton.BttnScript 
 	local script = Instance.new('LocalScript', JumpButton)
 
 	_G.JumpPowerDMT = "26"
@@ -320,27 +360,50 @@ local function DMWROQ_fake_script() -- JumpButton.BttnScript
 	_G.JumpPowerDMT = script.Parent.Parent.JumpBox.Text
 	end)
 end
-coroutine.wrap(DMWROQ_fake_script)()
-local function WSYQDWX_fake_script() -- Speed.LocalScript 
+coroutine.wrap(HJNTCVQ_fake_script)()
+local function LDFVZR_fake_script() -- DupeON.BttnScript 
+	local script = Instance.new('LocalScript', DupeON)
+
+	script.parent.MouseButton1Click:Connect(function()
+		_G.DupeDMT = true
+	end)
+end
+coroutine.wrap(LDFVZR_fake_script)()
+local function MYRAWPI_fake_script() -- DupeOFF.BttnScript 
+	local script = Instance.new('LocalScript', DupeOFF)
+
+	script.parent.MouseButton1Click:Connect(function()
+		_G.DupeDMT = false
+	end)
+end
+coroutine.wrap(MYRAWPI_fake_script)()
+local function SOTVZ_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/SpeedScript'))()
 	end)
 end
-coroutine.wrap(WSYQDWX_fake_script)()
-local function OVTFAZP_fake_script() -- PageHolder.glb 
+coroutine.wrap(SOTVZ_fake_script)()
+local function GJOYD_fake_script() -- PageHolder.glb 
 	local script = Instance.new('LocalScript', PageHolder)
 
 	script.Parent.Self.Visible = false
 	script.Parent.Random.Visible = false
 	--
+	_G.DupeDMT = false
+	while _G.DupeDMT do
+		wait(0.1)
+		game.ReplicatedStorage.RemoteFunctions.MoveItem:InvokeServer(47,48)
+		game.ReplicatedStorage.RemoteFunctions.MoveItem:InvokeServer(48,47)
+	end
+	--
 	_G.Self = script.Parent.Self
 	_G.Rando = script.Parent.Random
 	_G.customlegbroketextDMT="haha u broke leg nerd (leg broken use a splint to fix.) -Nemo."
 end
-coroutine.wrap(OVTFAZP_fake_script)()
-local function GWAMND_fake_script() -- Self_2.LocalScript 
+coroutine.wrap(GJOYD_fake_script)()
+local function VJXNWQI_fake_script() -- Self_2.LocalScript 
 	local script = Instance.new('LocalScript', Self_2)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -349,8 +412,8 @@ local function GWAMND_fake_script() -- Self_2.LocalScript
 		_G.Rando.Visible = false
 	end)
 end
-coroutine.wrap(GWAMND_fake_script)()
-local function TSRZ_fake_script() -- Self_3.LocalScript 
+coroutine.wrap(VJXNWQI_fake_script)()
+local function PMLYH_fake_script() -- Self_3.LocalScript 
 	local script = Instance.new('LocalScript', Self_3)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -359,16 +422,16 @@ local function TSRZ_fake_script() -- Self_3.LocalScript
 		_G.Rando.Visible = true
 	end)
 end
-coroutine.wrap(TSRZ_fake_script)()
-local function CPZCZWZ_fake_script() -- MultiTool.Loadable 
+coroutine.wrap(PMLYH_fake_script)()
+local function MRTXG_fake_script() -- MultiTool.Loadable 
 	local script = Instance.new('LocalScript', MultiTool)
 
 	--gamecheck
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/GameCheck'))()
 	--
 end
-coroutine.wrap(CPZCZWZ_fake_script)()
-local function LGKO_fake_script() -- MultiTool.Draggable 
+coroutine.wrap(MRTXG_fake_script)()
+local function CJVA_fake_script() -- MultiTool.Draggable 
 	local script = Instance.new('LocalScript', MultiTool)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -411,4 +474,4 @@ local function LGKO_fake_script() -- MultiTool.Draggable
 		end
 	end)
 end
-coroutine.wrap(LGKO_fake_script)()
+coroutine.wrap(CJVA_fake_script)()
