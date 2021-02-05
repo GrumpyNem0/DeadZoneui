@@ -1,5 +1,5 @@
 local PlayerSpeed = "45"
-local JumpPower = "50"
+local JumpPower = "80"
 local customlegbroketext = "ur leg broke lol"
 ----------------------------------
 if game.Players.LocalPlayer.PlayerGui:WaitForChild("Input") then
