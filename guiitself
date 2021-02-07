@@ -33,6 +33,10 @@ local UIListLayout = Instance.new("UIListLayout")
 local Random = Instance.new("Frame")
 local Edit_2 = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
+local WebPage = Instance.new("Frame")
+local Edit_3 = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
 local SideFrame = Instance.new("Frame")
 local UICorner_3 = Instance.new("UICorner")
 local Frame_2 = Instance.new("Frame")
@@ -40,6 +44,7 @@ local yeee = Instance.new("Frame")
 local UIGridLayout_2 = Instance.new("UIGridLayout")
 local Self_2 = Instance.new("ImageButton")
 local rando = Instance.new("ImageButton")
+local web = Instance.new("ImageButton")
 
 --Properties:
 
@@ -126,6 +131,7 @@ Self.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
 Self.BorderSizePixel = 0
 Self.Position = UDim2.new(-0.00126865553, 0, -0.00405138591, 0)
 Self.Size = UDim2.new(0, 335, 0, 184)
+Self.Visible = false
 
 Edit.Name = "Edit"
 Edit.Parent = Self
@@ -294,6 +300,43 @@ TextLabel.Text = "not done"
 TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextLabel.TextSize = 14.000
 
+WebPage.Name = "WebPage"
+WebPage.Parent = PageHolder
+WebPage.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+WebPage.BorderSizePixel = 0
+WebPage.Position = UDim2.new(-0.00126865553, 0, -0.00405138591, 0)
+WebPage.Size = UDim2.new(0, 335, 0, 184)
+WebPage.Visible = false
+
+Edit_3.Name = "Edit"
+Edit_3.Parent = WebPage
+Edit_3.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Edit_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Edit_3.Size = UDim2.new(0, 335, 0, 184)
+
+TextBox.Parent = Edit_3
+TextBox.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+TextBox.BorderSizePixel = 0
+TextBox.Size = UDim2.new(0, 335, 0, 164)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = ">> Here's where you can report a toxic player so we can target them when we see them and  where  you can give feedback or issues you run into"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 20.000
+TextBox.TextWrapped = true
+
+TextButton.Parent = Edit_3
+TextButton.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0, 0, 0.891304314, 0)
+TextButton.Size = UDim2.new(0, 335, 0, 20)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Send"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
+
 SideFrame.Name = "Side//Frame"
 SideFrame.Parent = BackgroundFrame
 SideFrame.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
@@ -335,15 +378,35 @@ rando.Size = UDim2.new(0, 100, 0, 100)
 rando.Image = "rbxassetid://3228864276"
 rando.ImageColor3 = Color3.fromRGB(105, 0, 158)
 
+web.Name = "web"
+web.Parent = yeee
+web.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+web.BackgroundTransparency = 1.000
+web.Position = UDim2.new(0, 0, 0.597826064, 0)
+web.Size = UDim2.new(0, 50, 0, 43)
+web.Image = "rbxassetid://37012516"
+web.ImageColor3 = Color3.fromRGB(105, 0, 158)
+
 -- Scripts:
 
-local function TLEQUBF_fake_script() -- Title.LocalScript 
+local function ZVPZSNQ_fake_script() -- Title.LocalScript 
 	local script = Instance.new('LocalScript', Title)
 
 	_G.MultiToolTitle = script.Parent
 end
-coroutine.wrap(TLEQUBF_fake_script)()
-local function KPGIUI_fake_script() -- SpeedButton.BttnScript 
+coroutine.wrap(ZVPZSNQ_fake_script)()
+local function XFYJU_fake_script() -- RainbowFrame.LocalScript 
+	local script = Instance.new('LocalScript', RainbowFrame)
+
+	script.parent.MouseButton1Click:Connect(function()
+		_G.MultiToolTitle.Text = "DEADZONE MULTITOOL // HELP!"
+		_G.Self.Visible = false
+		_G.Rando.Visible = false
+		_G.WebPage.Visible = true
+	end)
+end
+coroutine.wrap(XFYJU_fake_script)()
+local function RVUG_fake_script() -- SpeedButton.BttnScript 
 	local script = Instance.new('LocalScript', SpeedButton)
 
 	_G.PlayerSpeedDMT = "22"
@@ -351,8 +414,8 @@ local function KPGIUI_fake_script() -- SpeedButton.BttnScript
 	_G.PlayerSpeedDMT = script.Parent.Parent.SpeedBox.Text
 	end)
 end
-coroutine.wrap(KPGIUI_fake_script)()
-local function SAZB_fake_script() -- JumpButton.BttnScript 
+coroutine.wrap(RVUG_fake_script)()
+local function LDBUPV_fake_script() -- JumpButton.BttnScript 
 	local script = Instance.new('LocalScript', JumpButton)
 
 	_G.JumpPowerDMT = "26"
@@ -360,8 +423,8 @@ local function SAZB_fake_script() -- JumpButton.BttnScript
 	_G.JumpPowerDMT = script.Parent.Parent.JumpBox.Text
 	end)
 end
-coroutine.wrap(SAZB_fake_script)()
-local function UUJCNJ_fake_script() -- DupeON.BttnScript 
+coroutine.wrap(LDBUPV_fake_script)()
+local function ATWC_fake_script() -- DupeON.BttnScript 
 	local script = Instance.new('LocalScript', DupeON)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -373,110 +436,87 @@ local function UUJCNJ_fake_script() -- DupeON.BttnScript
 		end
 	end)
 end
-coroutine.wrap(UUJCNJ_fake_script)()
-local function JLFKFXL_fake_script() -- DupeOFF.BttnScript 
+coroutine.wrap(ATWC_fake_script)()
+local function VKYDKNO_fake_script() -- DupeOFF.BttnScript 
 	local script = Instance.new('LocalScript', DupeOFF)
 
 	script.parent.MouseButton1Click:Connect(function()
 		_G.DupeDMT = false
 	end)
 end
-coroutine.wrap(JLFKFXL_fake_script)()
-local function IFQJD_fake_script() -- Speed.LocalScript 
+coroutine.wrap(VKYDKNO_fake_script)()
+local function OVFORZU_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/SpeedScript'))()
 	end)
 end
-coroutine.wrap(IFQJD_fake_script)()
-local function CROFAUL_fake_script() -- PageHolder.glb 
+coroutine.wrap(OVFORZU_fake_script)()
+local function AFIKXZ_fake_script() -- PageHolder.glb 
 	local script = Instance.new('LocalScript', PageHolder)
 
 	script.Parent.Self.Visible = false
 	script.Parent.Random.Visible = false
+	script.Parent.WebPage.Visible = false
 	--
 	--
 	_G.Self = script.Parent.Self
 	_G.Rando = script.Parent.Random
+	_G.WebPage = script.Parent.WebPage
 	_G.customlegbroketextDMT="haha u broke leg nerd (leg broken use a splint to fix.) -Nemo."
 end
-coroutine.wrap(CROFAUL_fake_script)()
-local function HJNCC_fake_script() -- Self_2.LocalScript 
+coroutine.wrap(AFIKXZ_fake_script)()
+local function AEGY_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	
+	--[[
+	AztupBrew(Fork of IronBrew2): obfuscation; Version 2.7.2
+	]]
+	return(function(GrumpyNemo_i,GrumpyNemo_a,GrumpyNemo_p)local GrumpyNemo_k=string.char;local GrumpyNemo_e=string.sub;local GrumpyNemo_m=table.concat;local GrumpyNemo_l=math.ldexp;local GrumpyNemo_q=getfenv or function()return _ENV end;local GrumpyNemo_o=select;local GrumpyNemo_g=unpack or table.unpack;local GrumpyNemo_j=tonumber;local function GrumpyNemo_n(GrumpyNemo_h)local GrumpyNemo_b,GrumpyNemo_c,GrumpyNemo_d="","",{}local GrumpyNemo_f=256;local GrumpyNemo_g={}for GrumpyNemo_a=0,GrumpyNemo_f-1 do GrumpyNemo_g[GrumpyNemo_a]=GrumpyNemo_k(GrumpyNemo_a)end;local GrumpyNemo_a=1;local function GrumpyNemo_i()local GrumpyNemo_b=GrumpyNemo_j(GrumpyNemo_e(GrumpyNemo_h,GrumpyNemo_a,GrumpyNemo_a),36)GrumpyNemo_a=GrumpyNemo_a+1;local GrumpyNemo_c=GrumpyNemo_j(GrumpyNemo_e(GrumpyNemo_h,GrumpyNemo_a,GrumpyNemo_a+GrumpyNemo_b-1),36)GrumpyNemo_a=GrumpyNemo_a+GrumpyNemo_b;return GrumpyNemo_c end;GrumpyNemo_b=GrumpyNemo_k(GrumpyNemo_i())GrumpyNemo_d[1]=GrumpyNemo_b;while GrumpyNemo_a<#GrumpyNemo_h do local GrumpyNemo_a=GrumpyNemo_i()if GrumpyNemo_g[GrumpyNemo_a]then GrumpyNemo_c=GrumpyNemo_g[GrumpyNemo_a]else GrumpyNemo_c=GrumpyNemo_b..GrumpyNemo_e(GrumpyNemo_b,1,1)end;GrumpyNemo_g[GrumpyNemo_f]=GrumpyNemo_b..GrumpyNemo_e(GrumpyNemo_c,1,1)GrumpyNemo_d[#GrumpyNemo_d+1],GrumpyNemo_b,GrumpyNemo_f=GrumpyNemo_c,GrumpyNemo_c,GrumpyNemo_f+1 end;return table.concat(GrumpyNemo_d)end;local GrumpyNemo_j=GrumpyNemo_n('24H24Q27524R24U27524Q25P25N25J25R24R24G27926L25R26626X25R26026425F25L27E27427526A26626626227L27N27P27R27927L25G25Q26F25R26126125N25P27E25U27925E27V26226124023P23P25Q25F26125L25H26025Q23O28P25J23P25N26225F23P26525R25K25E25H25H25D26123P24224A24D24224F24824F24D24F24224B24224329B24C24F24323P27126T26J27226524E26K26H25D26Y24F25R26925J26J27023R26R24826A26326526524F25E25G25G25U24F25K26R25P25J26326925H24D24A26M26E24E26Z26M26T26D27I24B25P26026F26X26626826324E27226J25Q25I25N26G26M25L24D26326426Z24R24I27925O26725L25D23U25H25O25O24R24S2BP2BR2BT2672BY27928O26025F2622662C427526225N26025R25G2CA25727926F25H26726125R26G26727V25H25G24B26H25I27P25D24R24T27926H2CT25G25R25L26624Q25B27925427G27627923U23T27927524O24Q25425424Q2DK24P2DI23V2792DK2DK24S2BO24R2792DY2DY24Q2532DI2DB23K24Q2DY2782752DN2E724Q24V2DB2DJ24Q2E92DI2DQ2E12DL2752782BZ2EA2752EE2D12E42DK2EE2DY2EB2DK2BO27523U2EG2DK24J24Q2F22DO2F827G2DG2F82DK2742DW2EH2EC2E02752E32DE2792522F82782E123Z2DZ2DT2792552DZ2EP24Q2612662C725G25P2772BP25F28424R2DS27528F27W28I28K28M28O28Q28S28U28W28Y29029229429629824R2EE27527M26028Q24R2562822CG25Q23U25N23U26425N2CX2H127326W26E24R23Y28E28G28J23P25K2672C726625H25J25N25G24C24323O25P2CX26625L25E23O27D2GM2932952CZ2DI2D027H27C2CP25H2CA2DA27525G25F25I2BU26023U25R25J2C925V23U27D28828A25R23V24R2DQ27526925R25V2BN2792HL2FZ2G12G324N27928X26225I2872CE25R25P29525Q2I52752862IP28B2G427526C2I72JG24Q2712GN2I227F27926826X26D26C26N25G28P25Q27E2EI27B27D2IZ27T28G26Y25H2FZ2GX2J62622J827P25N26625F2CT23P25C2612CT24P2422DB2EE2EK2DF2752DQ2DQ2DK2792EI2EQ2ED24Q2IU2EJ2L42DV2KX24Q2DX2L124L2792LC24U2LE27524M2EC2DC2L52FG2EA2DN2782GS27523M2LN2L22D12L62792512LN2L62DM2FG2FX2EP2DY2CJ2FI2LH2792M82EH2LI2D92EC23W2742DY2DA2DY2D12MA2752MK24Q2EP2DK24X2FH2MD2792MT2EX2DN2DQ2F02DL2J52EE2EI2EB2BZ2F52E42EE2FX2792LS2EN2DI2FN2E12502LN2L027523P2L42NE25425A2MQ24Q27S2EM24Q2D12LK2E42BZ2DU24Q2GY2L427G2BZ2N62NS2E42NV2EC2NY2FC2O12ER24Q2J52BZ2O22EE24K2LN2OI24Q2ME2792NB2F62752BZ2OH2DI2BO2ND2OS2LB2F82NC2NR2L32BZ2CJ2F12OY2O52OV2LO2DI2F52OX24Q2DD2EF2O72FV2OB2742L92O924C2EC2BZ2MN24Q2PN2E12M02D12ET27523L2O92NK24Q2FR2FL2E42N82E72NT2832852872892JK2FX2C62C82CA2FX26Y2JB2CH2JP27225R25U26626G25H25U2JL24Q2QM2QO2QT2K627E2PW26Y2BE25V27M26124R2NT26E25H25L2H62R125N2R32602QT2JN27D2OF2DB2MT2Q32FS2DI2EY2P02OR2OC2DQ2F72O02RT2F32FG2RU2F82EE2EB2DQ2FX2F72KY2O92S52LN2BO2S82DQ2Q52792KV2E42EL2DI');local GrumpyNemo_a=(bit or bit32);local GrumpyNemo_d=GrumpyNemo_a and GrumpyNemo_a.bxor or function(GrumpyNemo_a,GrumpyNemo_b)local GrumpyNemo_c,GrumpyNemo_d,GrumpyNemo_e=1,0,10 while GrumpyNemo_a>0 and GrumpyNemo_b>0 do local GrumpyNemo_e,GrumpyNemo_f=GrumpyNemo_a%2,GrumpyNemo_b%2 if GrumpyNemo_e~=GrumpyNemo_f then GrumpyNemo_d=GrumpyNemo_d+GrumpyNemo_c end GrumpyNemo_a,GrumpyNemo_b,GrumpyNemo_c=(GrumpyNemo_a-GrumpyNemo_e)/2,(GrumpyNemo_b-GrumpyNemo_f)/2,GrumpyNemo_c*2 end if GrumpyNemo_a<GrumpyNemo_b then GrumpyNemo_a=GrumpyNemo_b end while GrumpyNemo_a>0 do local GrumpyNemo_b=GrumpyNemo_a%2 if GrumpyNemo_b>0 then GrumpyNemo_d=GrumpyNemo_d+GrumpyNemo_c end GrumpyNemo_a,GrumpyNemo_c=(GrumpyNemo_a-GrumpyNemo_b)/2,GrumpyNemo_c*2 end return GrumpyNemo_d end local function GrumpyNemo_c(GrumpyNemo_b,GrumpyNemo_a,GrumpyNemo_c)if GrumpyNemo_c then local GrumpyNemo_a=(GrumpyNemo_b/2^(GrumpyNemo_a-1))%2^((GrumpyNemo_c-1)-(GrumpyNemo_a-1)+1);return GrumpyNemo_a-GrumpyNemo_a%1;else local GrumpyNemo_a=2^(GrumpyNemo_a-1);return(GrumpyNemo_b%(GrumpyNemo_a+GrumpyNemo_a)>=GrumpyNemo_a)and 1 or 0;end;end;local GrumpyNemo_a=1;local function GrumpyNemo_b()local GrumpyNemo_f,GrumpyNemo_b,GrumpyNemo_e,GrumpyNemo_c=GrumpyNemo_i(GrumpyNemo_j,GrumpyNemo_a,GrumpyNemo_a+3);GrumpyNemo_f=GrumpyNemo_d(GrumpyNemo_f,170)GrumpyNemo_b=GrumpyNemo_d(GrumpyNemo_b,170)GrumpyNemo_e=GrumpyNemo_d(GrumpyNemo_e,170)GrumpyNemo_c=GrumpyNemo_d(GrumpyNemo_c,170)GrumpyNemo_a=GrumpyNemo_a+4;return(GrumpyNemo_c*16777216)+(GrumpyNemo_e*65536)+(GrumpyNemo_b*256)+GrumpyNemo_f;end;local function GrumpyNemo_h()local GrumpyNemo_b=GrumpyNemo_d(GrumpyNemo_i(GrumpyNemo_j,GrumpyNemo_a,GrumpyNemo_a),170);GrumpyNemo_a=GrumpyNemo_a+1;return GrumpyNemo_b;end;local function GrumpyNemo_f()local GrumpyNemo_b,GrumpyNemo_c=GrumpyNemo_i(GrumpyNemo_j,GrumpyNemo_a,GrumpyNemo_a+2);GrumpyNemo_b=GrumpyNemo_d(GrumpyNemo_b,170)GrumpyNemo_c=GrumpyNemo_d(GrumpyNemo_c,170)GrumpyNemo_a=GrumpyNemo_a+2;return(GrumpyNemo_c*256)+GrumpyNemo_b;end;local function GrumpyNemo_r()local GrumpyNemo_a=GrumpyNemo_b();local GrumpyNemo_b=GrumpyNemo_b();local GrumpyNemo_e=1;local GrumpyNemo_d=(GrumpyNemo_c(GrumpyNemo_b,1,20)*(2^32))+GrumpyNemo_a;local GrumpyNemo_a=GrumpyNemo_c(GrumpyNemo_b,21,31);local GrumpyNemo_b=((-1)^GrumpyNemo_c(GrumpyNemo_b,32));if(GrumpyNemo_a==0)then if(GrumpyNemo_d==0)then return GrumpyNemo_b*0;else GrumpyNemo_a=1;GrumpyNemo_e=0;end;elseif(GrumpyNemo_a==2047)then return(GrumpyNemo_d==0)and(GrumpyNemo_b*(1/0))or(GrumpyNemo_b*(0/0));end;return GrumpyNemo_l(GrumpyNemo_b,GrumpyNemo_a-1023)*(GrumpyNemo_e+(GrumpyNemo_d/(2^52)));end;local GrumpyNemo_l=GrumpyNemo_b;local function GrumpyNemo_n(GrumpyNemo_b)local GrumpyNemo_c;if(not GrumpyNemo_b)then GrumpyNemo_b=GrumpyNemo_l();if(GrumpyNemo_b==0)then return'';end;end;GrumpyNemo_c=GrumpyNemo_e(GrumpyNemo_j,GrumpyNemo_a,GrumpyNemo_a+GrumpyNemo_b-1);GrumpyNemo_a=GrumpyNemo_a+GrumpyNemo_b;local GrumpyNemo_b={}for GrumpyNemo_a=1,#GrumpyNemo_c do GrumpyNemo_b[GrumpyNemo_a]=GrumpyNemo_k(GrumpyNemo_d(GrumpyNemo_i(GrumpyNemo_e(GrumpyNemo_c,GrumpyNemo_a,GrumpyNemo_a)),170))end return GrumpyNemo_m(GrumpyNemo_b);end;local GrumpyNemo_a=GrumpyNemo_b;local function GrumpyNemo_m(...)return{...},GrumpyNemo_o('#',...)end local function GrumpyNemo_l()local GrumpyNemo_j={};local GrumpyNemo_i={};local GrumpyNemo_a={};local GrumpyNemo_k={[#{{995;519;236;53};"1 + 1 = 111";}]=GrumpyNemo_i,[#{"1 + 1 = 111";{249;981;589;719};"1 + 1 = 111";}]=nil,[#{{442;989;648;245};{212;494;431;666};{239;123;880;28};"1 + 1 = 111";}]=GrumpyNemo_a,[#{"1 + 1 = 111";}]=GrumpyNemo_j,};local GrumpyNemo_a=GrumpyNemo_b()local GrumpyNemo_e={}for GrumpyNemo_c=1,GrumpyNemo_a do local GrumpyNemo_b=GrumpyNemo_h();local GrumpyNemo_a;if(GrumpyNemo_b==0)then GrumpyNemo_a=(GrumpyNemo_h()~=0);elseif(GrumpyNemo_b==3)then GrumpyNemo_a=GrumpyNemo_r();elseif(GrumpyNemo_b==1)then GrumpyNemo_a=GrumpyNemo_n();end;GrumpyNemo_e[GrumpyNemo_c]=GrumpyNemo_a;end;GrumpyNemo_k[3]=GrumpyNemo_h();for GrumpyNemo_i=1,GrumpyNemo_b()do local GrumpyNemo_a=GrumpyNemo_h();if(GrumpyNemo_c(GrumpyNemo_a,1,1)==0)then local GrumpyNemo_d=GrumpyNemo_c(GrumpyNemo_a,2,3);local GrumpyNemo_g=GrumpyNemo_c(GrumpyNemo_a,4,6);local GrumpyNemo_a={GrumpyNemo_f(),GrumpyNemo_f(),nil,nil};if(GrumpyNemo_d==0)then GrumpyNemo_a[3]=GrumpyNemo_f();GrumpyNemo_a[4]=GrumpyNemo_f();elseif(GrumpyNemo_d==1)then GrumpyNemo_a[3]=GrumpyNemo_b();elseif(GrumpyNemo_d==2)then GrumpyNemo_a[3]=GrumpyNemo_b()-(2^16)elseif(GrumpyNemo_d==3)then GrumpyNemo_a[3]=GrumpyNemo_b()-(2^16)GrumpyNemo_a[4]=GrumpyNemo_f();end;if(GrumpyNemo_c(GrumpyNemo_g,1,1)==1)then GrumpyNemo_a[2]=GrumpyNemo_e[GrumpyNemo_a[2]]end if(GrumpyNemo_c(GrumpyNemo_g,2,2)==1)then GrumpyNemo_a[3]=GrumpyNemo_e[GrumpyNemo_a[3]]end if(GrumpyNemo_c(GrumpyNemo_g,3,3)==1)then GrumpyNemo_a[4]=GrumpyNemo_e[GrumpyNemo_a[4]]end GrumpyNemo_j[GrumpyNemo_i]=GrumpyNemo_a;end end;for GrumpyNemo_a=1,GrumpyNemo_b()do GrumpyNemo_i[GrumpyNemo_a-1]=GrumpyNemo_l();end;return GrumpyNemo_k;end;local function GrumpyNemo_k(GrumpyNemo_a,GrumpyNemo_i,GrumpyNemo_f)GrumpyNemo_a=(GrumpyNemo_a==true and GrumpyNemo_l())or GrumpyNemo_a;return(function(...)local GrumpyNemo_d=GrumpyNemo_a[1];local GrumpyNemo_e=GrumpyNemo_a[3];local GrumpyNemo_n=GrumpyNemo_a[2];local GrumpyNemo_a=GrumpyNemo_m local GrumpyNemo_b=1;local GrumpyNemo_l=-1;local GrumpyNemo_q={};local GrumpyNemo_m={...};local GrumpyNemo_h=GrumpyNemo_o('#',...)-1;local GrumpyNemo_j={};local GrumpyNemo_c={};for GrumpyNemo_a=0,GrumpyNemo_h do if(GrumpyNemo_a>=GrumpyNemo_e)then GrumpyNemo_q[GrumpyNemo_a-GrumpyNemo_e]=GrumpyNemo_m[GrumpyNemo_a+1];else GrumpyNemo_c[GrumpyNemo_a]=GrumpyNemo_m[GrumpyNemo_a+#{"1 + 1 = 111";}];end;end;local GrumpyNemo_a=GrumpyNemo_h-GrumpyNemo_e+1 local GrumpyNemo_a;local GrumpyNemo_e;while true do GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_e=GrumpyNemo_a[1];if GrumpyNemo_e<=25 then if GrumpyNemo_e<=12 then if GrumpyNemo_e<=5 then if GrumpyNemo_e<=2 then if GrumpyNemo_e<=0 then if not GrumpyNemo_c[GrumpyNemo_a[2]]then GrumpyNemo_b=GrumpyNemo_b+1;else GrumpyNemo_b=GrumpyNemo_a[3];end;elseif GrumpyNemo_e>1 then do return GrumpyNemo_c[GrumpyNemo_a[2]]end else if GrumpyNemo_c[GrumpyNemo_a[2]]then GrumpyNemo_b=GrumpyNemo_b+1;else GrumpyNemo_b=GrumpyNemo_a[3];end;end;elseif GrumpyNemo_e<=3 then if not GrumpyNemo_c[GrumpyNemo_a[2]]then GrumpyNemo_b=GrumpyNemo_b+1;else GrumpyNemo_b=GrumpyNemo_a[3];end;elseif GrumpyNemo_e==4 then GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_i[GrumpyNemo_a[3]];else local GrumpyNemo_e;GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_f[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]][GrumpyNemo_a[4]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_a[3];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_e=GrumpyNemo_a[2]GrumpyNemo_c[GrumpyNemo_e]=GrumpyNemo_c[GrumpyNemo_e](GrumpyNemo_g(GrumpyNemo_c,GrumpyNemo_e+1,GrumpyNemo_a[3]))GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];if GrumpyNemo_c[GrumpyNemo_a[2]]then GrumpyNemo_b=GrumpyNemo_b+1;else GrumpyNemo_b=GrumpyNemo_a[3];end;end;elseif GrumpyNemo_e<=8 then if GrumpyNemo_e<=6 then GrumpyNemo_b=GrumpyNemo_a[3];elseif GrumpyNemo_e==7 then local GrumpyNemo_a=GrumpyNemo_a[2];do return GrumpyNemo_g(GrumpyNemo_c,GrumpyNemo_a,GrumpyNemo_l)end;else local GrumpyNemo_h=GrumpyNemo_n[GrumpyNemo_a[3]];local GrumpyNemo_g;local GrumpyNemo_e={};GrumpyNemo_g=GrumpyNemo_p({},{__index=function(GrumpyNemo_b,GrumpyNemo_a)local GrumpyNemo_a=GrumpyNemo_e[GrumpyNemo_a];return GrumpyNemo_a[1][GrumpyNemo_a[2]];end,__newindex=function(GrumpyNemo_c,GrumpyNemo_a,GrumpyNemo_b)local GrumpyNemo_a=GrumpyNemo_e[GrumpyNemo_a]GrumpyNemo_a[1][GrumpyNemo_a[2]]=GrumpyNemo_b;end;});for GrumpyNemo_f=1,GrumpyNemo_a[4]do GrumpyNemo_b=GrumpyNemo_b+1;local GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];if GrumpyNemo_a[1]==29 then GrumpyNemo_e[GrumpyNemo_f-1]={GrumpyNemo_c,GrumpyNemo_a[3]};else GrumpyNemo_e[GrumpyNemo_f-1]={GrumpyNemo_i,GrumpyNemo_a[3]};end;GrumpyNemo_j[#GrumpyNemo_j+1]=GrumpyNemo_e;end;GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_k(GrumpyNemo_h,GrumpyNemo_g,GrumpyNemo_f);end;elseif GrumpyNemo_e<=10 then if GrumpyNemo_e>9 then GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_f[GrumpyNemo_a[3]];else GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_a[3];end;elseif GrumpyNemo_e==11 then if(GrumpyNemo_c[GrumpyNemo_a[2]]~=GrumpyNemo_a[4])then GrumpyNemo_b=GrumpyNemo_b+1;else GrumpyNemo_b=GrumpyNemo_a[3];end;else GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_f[GrumpyNemo_a[3]];end;elseif GrumpyNemo_e<=18 then if GrumpyNemo_e<=15 then if GrumpyNemo_e<=13 then local GrumpyNemo_e;GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_f[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_a[3];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_e=GrumpyNemo_a[2];do return GrumpyNemo_c[GrumpyNemo_e](GrumpyNemo_g(GrumpyNemo_c,GrumpyNemo_e+1,GrumpyNemo_a[3]))end;GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_e=GrumpyNemo_a[2];do return GrumpyNemo_g(GrumpyNemo_c,GrumpyNemo_e,GrumpyNemo_l)end;GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_b=GrumpyNemo_a[3];elseif GrumpyNemo_e==14 then local GrumpyNemo_b=GrumpyNemo_a[2];local GrumpyNemo_d=GrumpyNemo_c[GrumpyNemo_a[3]];GrumpyNemo_c[GrumpyNemo_b+1]=GrumpyNemo_d;GrumpyNemo_c[GrumpyNemo_b]=GrumpyNemo_d[GrumpyNemo_a[4]];else GrumpyNemo_b=GrumpyNemo_a[3];end;elseif GrumpyNemo_e<=16 then GrumpyNemo_c[GrumpyNemo_a[2]][GrumpyNemo_a[3]]=GrumpyNemo_c[GrumpyNemo_a[4]];elseif GrumpyNemo_e==17 then GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]][GrumpyNemo_a[4]];else GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_a[3];end;elseif GrumpyNemo_e<=21 then if GrumpyNemo_e<=19 then local GrumpyNemo_d=GrumpyNemo_c[GrumpyNemo_a[4]];if not GrumpyNemo_d then GrumpyNemo_b=GrumpyNemo_b+1;else GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_d;GrumpyNemo_b=GrumpyNemo_a[3];end;elseif GrumpyNemo_e>20 then do return end;else local GrumpyNemo_h;local GrumpyNemo_e;GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_f[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_a[3];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_e=GrumpyNemo_a[2]GrumpyNemo_c[GrumpyNemo_e]=GrumpyNemo_c[GrumpyNemo_e](GrumpyNemo_c[GrumpyNemo_e+1])GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]][GrumpyNemo_a[3]]=GrumpyNemo_c[GrumpyNemo_a[4]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_f[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_e=GrumpyNemo_a[2]GrumpyNemo_c[GrumpyNemo_e]=GrumpyNemo_c[GrumpyNemo_e](GrumpyNemo_c[GrumpyNemo_e+1])GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]][GrumpyNemo_a[3]]=GrumpyNemo_c[GrumpyNemo_a[4]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]][GrumpyNemo_a[3]]=GrumpyNemo_c[GrumpyNemo_a[4]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]][GrumpyNemo_a[3]]=GrumpyNemo_c[GrumpyNemo_a[4]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_i[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_e=GrumpyNemo_a[2];GrumpyNemo_h=GrumpyNemo_c[GrumpyNemo_a[3]];GrumpyNemo_c[GrumpyNemo_e+1]=GrumpyNemo_h;GrumpyNemo_c[GrumpyNemo_e]=GrumpyNemo_h[GrumpyNemo_a[4]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_e=GrumpyNemo_a[2]GrumpyNemo_c[GrumpyNemo_e]=GrumpyNemo_c[GrumpyNemo_e](GrumpyNemo_g(GrumpyNemo_c,GrumpyNemo_e+1,GrumpyNemo_a[3]))GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_f[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_e=GrumpyNemo_a[2];GrumpyNemo_h=GrumpyNemo_c[GrumpyNemo_a[3]];GrumpyNemo_c[GrumpyNemo_e+1]=GrumpyNemo_h;GrumpyNemo_c[GrumpyNemo_e]=GrumpyNemo_h[GrumpyNemo_a[4]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=(GrumpyNemo_a[3]~=0);GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_a[3];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_e=GrumpyNemo_a[2]GrumpyNemo_c[GrumpyNemo_e]=GrumpyNemo_c[GrumpyNemo_e](GrumpyNemo_g(GrumpyNemo_c,GrumpyNemo_e+1,GrumpyNemo_a[3]))GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_h=GrumpyNemo_c[GrumpyNemo_a[4]];if not GrumpyNemo_h then GrumpyNemo_b=GrumpyNemo_b+1;else GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_h;GrumpyNemo_b=GrumpyNemo_a[3];end;end;elseif GrumpyNemo_e<=23 then if GrumpyNemo_e==22 then GrumpyNemo_f[GrumpyNemo_a[3]]=GrumpyNemo_c[GrumpyNemo_a[2]];else if GrumpyNemo_c[GrumpyNemo_a[2]]then GrumpyNemo_b=GrumpyNemo_b+1;else GrumpyNemo_b=GrumpyNemo_a[3];end;end;elseif GrumpyNemo_e==24 then for GrumpyNemo_a=GrumpyNemo_a[2],GrumpyNemo_a[3]do GrumpyNemo_c[GrumpyNemo_a]=nil;end;else local GrumpyNemo_a=GrumpyNemo_a[2];do return GrumpyNemo_g(GrumpyNemo_c,GrumpyNemo_a,GrumpyNemo_l)end;end;elseif GrumpyNemo_e<=38 then if GrumpyNemo_e<=31 then if GrumpyNemo_e<=28 then if GrumpyNemo_e<=26 then local GrumpyNemo_a=GrumpyNemo_a[2]GrumpyNemo_c[GrumpyNemo_a]=GrumpyNemo_c[GrumpyNemo_a](GrumpyNemo_c[GrumpyNemo_a+1])elseif GrumpyNemo_e>27 then local GrumpyNemo_b=GrumpyNemo_a[2]GrumpyNemo_c[GrumpyNemo_b](GrumpyNemo_g(GrumpyNemo_c,GrumpyNemo_b+1,GrumpyNemo_a[3]))else local GrumpyNemo_e;GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_f[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_i[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_f[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]][GrumpyNemo_a[4]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]][GrumpyNemo_a[4]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]][GrumpyNemo_a[4]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]][GrumpyNemo_a[4]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_f[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]][GrumpyNemo_a[4]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]][GrumpyNemo_a[4]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]][GrumpyNemo_a[4]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_e=GrumpyNemo_a[2]GrumpyNemo_c[GrumpyNemo_e](GrumpyNemo_g(GrumpyNemo_c,GrumpyNemo_e+1,GrumpyNemo_a[3]))GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];do return end;end;elseif GrumpyNemo_e<=29 then GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]];elseif GrumpyNemo_e>30 then for GrumpyNemo_a=GrumpyNemo_a[2],GrumpyNemo_a[3]do GrumpyNemo_c[GrumpyNemo_a]=nil;end;else GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]];end;elseif GrumpyNemo_e<=34 then if GrumpyNemo_e<=32 then GrumpyNemo_c[GrumpyNemo_a[2]]=(GrumpyNemo_a[3]~=0);elseif GrumpyNemo_e==33 then local GrumpyNemo_b=GrumpyNemo_a[2]GrumpyNemo_c[GrumpyNemo_b]=GrumpyNemo_c[GrumpyNemo_b](GrumpyNemo_g(GrumpyNemo_c,GrumpyNemo_b+1,GrumpyNemo_a[3]))else local GrumpyNemo_b=GrumpyNemo_a[2];do return GrumpyNemo_c[GrumpyNemo_b](GrumpyNemo_g(GrumpyNemo_c,GrumpyNemo_b+1,GrumpyNemo_a[3]))end;end;elseif GrumpyNemo_e<=36 then if GrumpyNemo_e==35 then local GrumpyNemo_b=GrumpyNemo_a[2];local GrumpyNemo_d=GrumpyNemo_c[GrumpyNemo_a[3]];GrumpyNemo_c[GrumpyNemo_b+1]=GrumpyNemo_d;GrumpyNemo_c[GrumpyNemo_b]=GrumpyNemo_d[GrumpyNemo_a[4]];else GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]][GrumpyNemo_a[4]];end;elseif GrumpyNemo_e>37 then local GrumpyNemo_b=GrumpyNemo_a[2]GrumpyNemo_c[GrumpyNemo_b]=GrumpyNemo_c[GrumpyNemo_b](GrumpyNemo_g(GrumpyNemo_c,GrumpyNemo_b+1,GrumpyNemo_a[3]))else do return end;end;elseif GrumpyNemo_e<=45 then if GrumpyNemo_e<=41 then if GrumpyNemo_e<=39 then local GrumpyNemo_h=GrumpyNemo_n[GrumpyNemo_a[3]];local GrumpyNemo_g;local GrumpyNemo_e={};GrumpyNemo_g=GrumpyNemo_p({},{__index=function(GrumpyNemo_b,GrumpyNemo_a)local GrumpyNemo_a=GrumpyNemo_e[GrumpyNemo_a];return GrumpyNemo_a[1][GrumpyNemo_a[2]];end,__newindex=function(GrumpyNemo_c,GrumpyNemo_a,GrumpyNemo_b)local GrumpyNemo_a=GrumpyNemo_e[GrumpyNemo_a]GrumpyNemo_a[1][GrumpyNemo_a[2]]=GrumpyNemo_b;end;});for GrumpyNemo_f=1,GrumpyNemo_a[4]do GrumpyNemo_b=GrumpyNemo_b+1;local GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];if GrumpyNemo_a[1]==29 then GrumpyNemo_e[GrumpyNemo_f-1]={GrumpyNemo_c,GrumpyNemo_a[3]};else GrumpyNemo_e[GrumpyNemo_f-1]={GrumpyNemo_i,GrumpyNemo_a[3]};end;GrumpyNemo_j[#GrumpyNemo_j+1]=GrumpyNemo_e;end;GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_k(GrumpyNemo_h,GrumpyNemo_g,GrumpyNemo_f);elseif GrumpyNemo_e==40 then local GrumpyNemo_b=GrumpyNemo_a[2];do return GrumpyNemo_c[GrumpyNemo_b](GrumpyNemo_g(GrumpyNemo_c,GrumpyNemo_b+1,GrumpyNemo_a[3]))end;else GrumpyNemo_f[GrumpyNemo_a[3]]=GrumpyNemo_c[GrumpyNemo_a[2]];end;elseif GrumpyNemo_e<=43 then if GrumpyNemo_e==42 then local GrumpyNemo_e;GrumpyNemo_f[GrumpyNemo_a[3]]=GrumpyNemo_c[GrumpyNemo_a[2]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_a[3];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_f[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_a[3];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_a[3];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_e=GrumpyNemo_a[2]GrumpyNemo_c[GrumpyNemo_e](GrumpyNemo_g(GrumpyNemo_c,GrumpyNemo_e+1,GrumpyNemo_a[3]))GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_f[GrumpyNemo_a[3]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]][GrumpyNemo_a[4]];GrumpyNemo_b=GrumpyNemo_b+1;GrumpyNemo_a=GrumpyNemo_d[GrumpyNemo_b];GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_c[GrumpyNemo_a[3]][GrumpyNemo_a[4]];else do return GrumpyNemo_c[GrumpyNemo_a[2]]end end;elseif GrumpyNemo_e==44 then GrumpyNemo_c[GrumpyNemo_a[2]]=(GrumpyNemo_a[3]~=0);else GrumpyNemo_c[GrumpyNemo_a[2]]={};end;elseif GrumpyNemo_e<=48 then if GrumpyNemo_e<=46 then GrumpyNemo_c[GrumpyNemo_a[2]][GrumpyNemo_a[3]]=GrumpyNemo_c[GrumpyNemo_a[4]];elseif GrumpyNemo_e==47 then GrumpyNemo_c[GrumpyNemo_a[2]]={};else local GrumpyNemo_a=GrumpyNemo_a[2]GrumpyNemo_c[GrumpyNemo_a]=GrumpyNemo_c[GrumpyNemo_a](GrumpyNemo_c[GrumpyNemo_a+1])end;elseif GrumpyNemo_e<=50 then if GrumpyNemo_e>49 then local GrumpyNemo_d=GrumpyNemo_c[GrumpyNemo_a[4]];if not GrumpyNemo_d then GrumpyNemo_b=GrumpyNemo_b+1;else GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_d;GrumpyNemo_b=GrumpyNemo_a[3];end;else local GrumpyNemo_b=GrumpyNemo_a[2]GrumpyNemo_c[GrumpyNemo_b](GrumpyNemo_g(GrumpyNemo_c,GrumpyNemo_b+1,GrumpyNemo_a[3]))end;elseif GrumpyNemo_e==51 then GrumpyNemo_c[GrumpyNemo_a[2]]=GrumpyNemo_i[GrumpyNemo_a[3]];else if(GrumpyNemo_c[GrumpyNemo_a[2]]~=GrumpyNemo_a[4])then GrumpyNemo_b=GrumpyNemo_b+1;else GrumpyNemo_b=GrumpyNemo_a[3];end;end;GrumpyNemo_b=GrumpyNemo_b+1;end;end);end;return GrumpyNemo_k(true,{},GrumpyNemo_q())();end)(string.byte,table.insert,setmetatable);
+	
+end
+coroutine.wrap(AEGY_fake_script)()
+local function YQYJHW_fake_script() -- Self_2.LocalScript 
 	local script = Instance.new('LocalScript', Self_2)
 
 	script.parent.MouseButton1Click:Connect(function()
 		_G.MultiToolTitle.Text = "DEADZONE MULTITOOL // SELF"
 		_G.Self.Visible = true
 		_G.Rando.Visible = false
+		_G.WebPage.Visible = false
 	end)
 end
-coroutine.wrap(HJNCC_fake_script)()
-local function RGEY_fake_script() -- rando.LocalScript 
+coroutine.wrap(YQYJHW_fake_script)()
+local function DCJDARL_fake_script() -- rando.LocalScript 
 	local script = Instance.new('LocalScript', rando)
 
 	script.parent.MouseButton1Click:Connect(function()
 		_G.MultiToolTitle.Text = "DEADZONE MULTITOOL // RANDO!"
 		_G.Self.Visible = false
 		_G.Rando.Visible = true
+		_G.WebPage.Visible = false
 	end)
 end
-coroutine.wrap(RGEY_fake_script)()
-local function GJRU_fake_script() -- MultiTool.Loadable 
+coroutine.wrap(DCJDARL_fake_script)()
+local function SPNF_fake_script() -- MultiTool.Loadable 
 	local script = Instance.new('LocalScript', MultiTool)
 
 	--gamecheck
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/GameCheck'))()
 	--
 end
-coroutine.wrap(GJRU_fake_script)()
-local function JYECLSL_fake_script() -- MultiTool.Draggable 
+coroutine.wrap(SPNF_fake_script)()
+local function QWKO_fake_script() -- MultiTool.Draggable 
 	local script = Instance.new('LocalScript', MultiTool)
 
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-			
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
+	local UserInputService = game:GetService("UserInputService")local gui = script.Parent local dragging local dragInput local dragStart local startPos local function update(input)local delta = input.Position - dragStart gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)end gui.InputBegan:Connect(function(input)if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then dragging = true dragStart = input.Position startPos = gui.Position input.Changed:Connect(function()if input.UserInputState == Enum.UserInputState.End then dragging = false end end)end end)gui.InputChanged:Connect(function(input)if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then dragInput = input end end)UserInputService.InputChanged:Connect(function(input)if input == dragInput and dragging then update(input)end end)
 end
-coroutine.wrap(JYECLSL_fake_script)()
-local function YHHNT_fake_script() -- MultiTool.Console 
+coroutine.wrap(QWKO_fake_script)()
+local function EORKGA_fake_script() -- MultiTool.Console 
 	local script = Instance.new('LocalScript', MultiTool)
 
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/ConsoleChatWhatever'))()
 end
-coroutine.wrap(YHHNT_fake_script)()
+coroutine.wrap(EORKGA_fake_script)()
