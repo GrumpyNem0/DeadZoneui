@@ -39,7 +39,7 @@ local Frame_2 = Instance.new("Frame")
 local yeee = Instance.new("Frame")
 local UIGridLayout_2 = Instance.new("UIGridLayout")
 local Self_2 = Instance.new("ImageButton")
-local Self_3 = Instance.new("ImageButton")
+local rando = Instance.new("ImageButton")
 
 --Properties:
 
@@ -84,7 +84,7 @@ Title.BorderSizePixel = 0
 Title.Position = UDim2.new(0.125, 0, 0, 0)
 Title.Size = UDim2.new(0, 308, 0, 20)
 Title.Font = Enum.Font.SourceSans
-Title.Text = "DEADZONE FUCKER"
+Title.Text = "DEADZONE MULTITOOL"
 Title.TextColor3 = Color3.fromRGB(0, 0, 0)
 Title.TextScaled = true
 Title.TextSize = 14.000
@@ -157,7 +157,7 @@ SpeedBox.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
 SpeedBox.BorderSizePixel = 0
 SpeedBox.Size = UDim2.new(0, 200, 0, 50)
 SpeedBox.Font = Enum.Font.SourceSans
-SpeedBox.PlaceholderText = "26"
+SpeedBox.PlaceholderText = "22"
 SpeedBox.Text = ""
 SpeedBox.TextColor3 = Color3.fromRGB(0, 0, 0)
 SpeedBox.TextScaled = true
@@ -194,7 +194,7 @@ JumpBox.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
 JumpBox.BorderSizePixel = 0
 JumpBox.Size = UDim2.new(0, 200, 0, 50)
 JumpBox.Font = Enum.Font.SourceSans
-JumpBox.PlaceholderText = "22"
+JumpBox.PlaceholderText = "26"
 JumpBox.Text = ""
 JumpBox.TextColor3 = Color3.fromRGB(0, 0, 0)
 JumpBox.TextScaled = true
@@ -327,23 +327,23 @@ Self_2.Size = UDim2.new(0, 100, 0, 100)
 Self_2.Image = "rbxassetid://2242016188"
 Self_2.ImageColor3 = Color3.fromRGB(105, 0, 158)
 
-Self_3.Name = "Self"
-Self_3.Parent = yeee
-Self_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Self_3.BackgroundTransparency = 1.000
-Self_3.Size = UDim2.new(0, 100, 0, 100)
-Self_3.Image = "rbxassetid://3228864276"
-Self_3.ImageColor3 = Color3.fromRGB(105, 0, 158)
+rando.Name = "rando"
+rando.Parent = yeee
+rando.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rando.BackgroundTransparency = 1.000
+rando.Size = UDim2.new(0, 100, 0, 100)
+rando.Image = "rbxassetid://3228864276"
+rando.ImageColor3 = Color3.fromRGB(105, 0, 158)
 
 -- Scripts:
 
-local function NHPDB_fake_script() -- Title.LocalScript 
+local function CRDZG_fake_script() -- Title.LocalScript 
 	local script = Instance.new('LocalScript', Title)
 
 	_G.MultiToolTitle = script.Parent
 end
-coroutine.wrap(NHPDB_fake_script)()
-local function TSCYWM_fake_script() -- SpeedButton.BttnScript 
+coroutine.wrap(CRDZG_fake_script)()
+local function FKWJOA_fake_script() -- SpeedButton.BttnScript 
 	local script = Instance.new('LocalScript', SpeedButton)
 
 	_G.PlayerSpeedDMT = "22"
@@ -351,8 +351,8 @@ local function TSCYWM_fake_script() -- SpeedButton.BttnScript
 	_G.PlayerSpeedDMT = script.Parent.Parent.SpeedBox.Text
 	end)
 end
-coroutine.wrap(TSCYWM_fake_script)()
-local function PVQMTPG_fake_script() -- JumpButton.BttnScript 
+coroutine.wrap(FKWJOA_fake_script)()
+local function EWATIR_fake_script() -- JumpButton.BttnScript 
 	local script = Instance.new('LocalScript', JumpButton)
 
 	_G.JumpPowerDMT = "26"
@@ -360,8 +360,8 @@ local function PVQMTPG_fake_script() -- JumpButton.BttnScript
 	_G.JumpPowerDMT = script.Parent.Parent.JumpBox.Text
 	end)
 end
-coroutine.wrap(PVQMTPG_fake_script)()
-local function RMDR_fake_script() -- DupeON.BttnScript 
+coroutine.wrap(EWATIR_fake_script)()
+local function CYJK_fake_script() -- DupeON.BttnScript 
 	local script = Instance.new('LocalScript', DupeON)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -373,24 +373,24 @@ local function RMDR_fake_script() -- DupeON.BttnScript
 		end
 	end)
 end
-coroutine.wrap(RMDR_fake_script)()
-local function BJPFXAX_fake_script() -- DupeOFF.BttnScript 
+coroutine.wrap(CYJK_fake_script)()
+local function LJOSA_fake_script() -- DupeOFF.BttnScript 
 	local script = Instance.new('LocalScript', DupeOFF)
 
 	script.parent.MouseButton1Click:Connect(function()
 		_G.DupeDMT = false
 	end)
 end
-coroutine.wrap(BJPFXAX_fake_script)()
-local function QYMDFL_fake_script() -- Speed.LocalScript 
+coroutine.wrap(LJOSA_fake_script)()
+local function DLCTIPI_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/SpeedScript'))()
 	end)
 end
-coroutine.wrap(QYMDFL_fake_script)()
-local function UNNV_fake_script() -- PageHolder.glb 
+coroutine.wrap(DLCTIPI_fake_script)()
+local function PEIVY_fake_script() -- PageHolder.glb 
 	local script = Instance.new('LocalScript', PageHolder)
 
 	script.Parent.Self.Visible = false
@@ -401,36 +401,36 @@ local function UNNV_fake_script() -- PageHolder.glb
 	_G.Rando = script.Parent.Random
 	_G.customlegbroketextDMT="haha u broke leg nerd (leg broken use a splint to fix.) -Nemo."
 end
-coroutine.wrap(UNNV_fake_script)()
-local function CSTHB_fake_script() -- Self_2.LocalScript 
+coroutine.wrap(PEIVY_fake_script)()
+local function SOQU_fake_script() -- Self_2.LocalScript 
 	local script = Instance.new('LocalScript', Self_2)
 
 	script.parent.MouseButton1Click:Connect(function()
-		_G.MultiToolTitle.Text = "DEADZONE FUCKER // SELF"
+		_G.MultiToolTitle.Text = "DEADZONE MULTITOOL // SELF"
 		_G.Self.Visible = true
 		_G.Rando.Visible = false
 	end)
 end
-coroutine.wrap(CSTHB_fake_script)()
-local function PIVBWJ_fake_script() -- Self_3.LocalScript 
-	local script = Instance.new('LocalScript', Self_3)
+coroutine.wrap(SOQU_fake_script)()
+local function GDDQO_fake_script() -- rando.LocalScript 
+	local script = Instance.new('LocalScript', rando)
 
 	script.parent.MouseButton1Click:Connect(function()
-		_G.MultiToolTitle.Text = "DEADZONE FUCKER // RANDO!"
+		_G.MultiToolTitle.Text = "DEADZONE MULTITOOL // RANDO!"
 		_G.Self.Visible = false
 		_G.Rando.Visible = true
 	end)
 end
-coroutine.wrap(PIVBWJ_fake_script)()
-local function MUKFNAX_fake_script() -- MultiTool.Loadable 
+coroutine.wrap(GDDQO_fake_script)()
+local function ITMEE_fake_script() -- MultiTool.Loadable 
 	local script = Instance.new('LocalScript', MultiTool)
 
 	--gamecheck
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/GameCheck'))()
 	--
 end
-coroutine.wrap(MUKFNAX_fake_script)()
-local function GYPL_fake_script() -- MultiTool.Draggable 
+coroutine.wrap(ITMEE_fake_script)()
+local function QPPQZI_fake_script() -- MultiTool.Draggable 
 	local script = Instance.new('LocalScript', MultiTool)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -473,4 +473,19 @@ local function GYPL_fake_script() -- MultiTool.Draggable
 		end
 	end)
 end
-coroutine.wrap(GYPL_fake_script)()
+coroutine.wrap(QPPQZI_fake_script)()
+local function QIUIEMK_fake_script() -- MultiTool.Console 
+	local script = Instance.new('LocalScript', MultiTool)
+
+	function dzchat(String)
+		game.StarterGui:SetCore("ChatMakeSystemMessage", {
+			Text = '[DEADZONE MULTITOOL]: ' .. String
+		})
+	end
+	dzchat("Loading . . .")
+	wait(1)
+	dzchat("Done!")
+	dzchat("Have fun!")
+	dzchat("Credits: Grumpy Nemo#5103")
+end
+coroutine.wrap(QIUIEMK_fake_script)()
