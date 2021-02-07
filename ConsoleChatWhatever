@@ -1,0 +1,10 @@
+function dzchat(String)
+	game.StarterGui:SetCore("ChatMakeSystemMessage", {
+		Text = '[DEADZONE MULTITOOL]: ' .. String
+	})
+end
+dzchat("Loading . . .")
+wait(1)
+dzchat("Done!")
+dzchat("Have fun!")
+dzchat("Credits: Grumpy Nemo#5103")
