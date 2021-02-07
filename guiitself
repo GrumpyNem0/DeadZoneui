@@ -456,6 +456,13 @@ local function KQJW_fake_script() -- PageHolder.glb
 	_G.customlegbroketextDMT="haha u broke leg nerd (leg broken use a splint to fix.) -Nemo."
 end
 coroutine.wrap(KQJW_fake_script)()
+local function BYMTGU_fake_script() -- Edit_3.glob 
+	local script = Instance.new('LocalScript', Edit_3)
+
+	_G.GGHDMT = script.Parent.TextBox
+	_G.GGDDMT = script.Parent.TextButton
+end
+coroutine.wrap(BYMTGU_fake_script)()
 local function YFCE_fake_script() -- TextButton.main 
 	local script = Instance.new('LocalScript', TextButton)
 local HttpService = game:GetService("HttpService");
@@ -486,13 +493,6 @@ _G.GGDDMT.MouseButton1Click:Connect(function()
 	SendMessage(webhookaa,_G.GGHDMT.Text,game.Players.LocalPlayer.Name)
 end)end
 coroutine.wrap(YFCE_fake_script)()
-local function BYMTGU_fake_script() -- Edit_3.glob 
-	local script = Instance.new('LocalScript', Edit_3)
-
-	_G.GGHDMT = script.Parent.TextBox
-	_G.GGDDMT = script.Parent.TextButton
-end
-coroutine.wrap(BYMTGU_fake_script)()
 local function NKVW_fake_script() -- Self_2.LocalScript 
 	local script = Instance.new('LocalScript', Self_2)
 
