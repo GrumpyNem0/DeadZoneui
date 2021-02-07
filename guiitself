@@ -389,13 +389,13 @@ web.ImageColor3 = Color3.fromRGB(105, 0, 158)
 
 -- Scripts:
 
-local function VAKTHF_fake_script() -- Title.LocalScript 
+local function FTHBT_fake_script() -- Title.LocalScript 
 	local script = Instance.new('LocalScript', Title)
 
 	_G.MultiToolTitle = script.Parent
 end
-coroutine.wrap(VAKTHF_fake_script)()
-local function AGBOFZC_fake_script() -- SpeedButton.BttnScript 
+coroutine.wrap(FTHBT_fake_script)()
+local function QFUFT_fake_script() -- SpeedButton.BttnScript 
 	local script = Instance.new('LocalScript', SpeedButton)
 
 	_G.PlayerSpeedDMT = "22"
@@ -403,8 +403,8 @@ local function AGBOFZC_fake_script() -- SpeedButton.BttnScript
 	_G.PlayerSpeedDMT = script.Parent.Parent.SpeedBox.Text
 	end)
 end
-coroutine.wrap(AGBOFZC_fake_script)()
-local function XITGFYO_fake_script() -- JumpButton.BttnScript 
+coroutine.wrap(QFUFT_fake_script)()
+local function AXRAF_fake_script() -- JumpButton.BttnScript 
 	local script = Instance.new('LocalScript', JumpButton)
 
 	_G.JumpPowerDMT = "26"
@@ -412,8 +412,8 @@ local function XITGFYO_fake_script() -- JumpButton.BttnScript
 	_G.JumpPowerDMT = script.Parent.Parent.JumpBox.Text
 	end)
 end
-coroutine.wrap(XITGFYO_fake_script)()
-local function BHRWHE_fake_script() -- DupeON.BttnScript 
+coroutine.wrap(AXRAF_fake_script)()
+local function DDUTS_fake_script() -- DupeON.BttnScript 
 	local script = Instance.new('LocalScript', DupeON)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -425,24 +425,24 @@ local function BHRWHE_fake_script() -- DupeON.BttnScript
 		end
 	end)
 end
-coroutine.wrap(BHRWHE_fake_script)()
-local function EBMDF_fake_script() -- DupeOFF.BttnScript 
+coroutine.wrap(DDUTS_fake_script)()
+local function NVQX_fake_script() -- DupeOFF.BttnScript 
 	local script = Instance.new('LocalScript', DupeOFF)
 
 	script.parent.MouseButton1Click:Connect(function()
 		_G.DupeDMT = false
 	end)
 end
-coroutine.wrap(EBMDF_fake_script)()
-local function YRBQEKA_fake_script() -- Speed.LocalScript 
+coroutine.wrap(NVQX_fake_script)()
+local function UJAB_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/SpeedScript'))()
 	end)
 end
-coroutine.wrap(YRBQEKA_fake_script)()
-local function AESZ_fake_script() -- PageHolder.glb 
+coroutine.wrap(UJAB_fake_script)()
+local function TJXFVIX_fake_script() -- PageHolder.glb 
 	local script = Instance.new('LocalScript', PageHolder)
 
 	script.Parent.Self.Visible = false
@@ -455,47 +455,47 @@ local function AESZ_fake_script() -- PageHolder.glb
 	_G.WebPage = script.Parent.WebPage
 	_G.customlegbroketextDMT="haha u broke leg nerd (leg broken use a splint to fix.) -Nemo."
 end
-coroutine.wrap(AESZ_fake_script)()
-local function JYRNJF_fake_script() -- TextButton.main 
+coroutine.wrap(TJXFVIX_fake_script)()
+local function RDLSSG_fake_script() -- TextButton.main 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local HttpService = game:GetService("HttpService");
 	local webhookaa = "https://discord.com/api/webhooks/807852575818907659/W_ATw4FCkP5eKmAV-Y2Hqww5hnnx5bYgmqKo70DL4QD_OGe1grMStJq4TAdlaBDc7qvQ"
-	script.Parent.MouseButton1Click:Connect(function()
-		local function SendMessage(Webhook, Message, Botname) 
-			if not string.find(Webhook, "https://discord.com/api/webhooks/") then 
-				return error("Send a valid URL");
-			end
-			local Name;
-			local API = "http://buritoman69.glitch.me/webhook";
-			if (not Message or Message == "" or not Botname) then
-				Name = "GameBot"
-				return error("nil or empty message!")
-			else 
-				Name = Botname;
-			end
-			local Body = {
-				['Key'] = tostring("applesaregood"),
-				['Message'] = tostring(Message),
-				['Name'] = Name,
-				['Webhook'] = Webhook    
-			}
-			Body = HttpService:JSONEncode(Body);
-			local Data = game:HttpPost(API, Body, false, "application/json")
-			return Data or nil;
+	local function SendMessage(Webhook, Message, Botname) 
+		if not string.find(Webhook, "https://discord.com/api/webhooks/") then 
+			return error("Send a valid URL");
 		end
+		local Name;
+		local API = "http://buritoman69.glitch.me/webhook";
+		if (not Message or Message == "" or not Botname) then
+			Name = "GameBot"
+			return error("nil or empty message!")
+		else 
+			Name = Botname;
+		end
+		local Body = {
+			['Key'] = tostring("applesaregood"),
+			['Message'] = tostring(Message),
+			['Name'] = Name,
+			['Webhook'] = Webhook    
+		}
+		Body = HttpService:JSONEncode(Body);
+		local Data = game:HttpPost(API, Body, false, "application/json")
+		return Data or nil;
+	end
+	script.Parent.MouseButton1Click:Connect(function()
 		SendMessage(webhookaa,script.Parent.Parent.TextBox.Text,game.Players.LocalPlayer.Name)
 	end)
 end
-coroutine.wrap(JYRNJF_fake_script)()
-local function AZDBB_fake_script() -- Edit_3.glob 
+coroutine.wrap(RDLSSG_fake_script)()
+local function XEFCRU_fake_script() -- Edit_3.glob 
 	local script = Instance.new('LocalScript', Edit_3)
 
 	_G.GGHDMT = script.Parent.TextBox
 	_G.GGDDMT = script.Parent.TextButton
 end
-coroutine.wrap(AZDBB_fake_script)()
-local function PEOUOP_fake_script() -- Self_2.LocalScript 
+coroutine.wrap(XEFCRU_fake_script)()
+local function ZJFE_fake_script() -- Self_2.LocalScript 
 	local script = Instance.new('LocalScript', Self_2)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -505,8 +505,8 @@ local function PEOUOP_fake_script() -- Self_2.LocalScript
 		_G.WebPage.Visible = false
 	end)
 end
-coroutine.wrap(PEOUOP_fake_script)()
-local function EUUFVCS_fake_script() -- rando.LocalScript 
+coroutine.wrap(ZJFE_fake_script)()
+local function XCCDGMB_fake_script() -- rando.LocalScript 
 	local script = Instance.new('LocalScript', rando)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -516,8 +516,8 @@ local function EUUFVCS_fake_script() -- rando.LocalScript
 		_G.WebPage.Visible = false
 	end)
 end
-coroutine.wrap(EUUFVCS_fake_script)()
-local function XADKT_fake_script() -- web.LocalScript 
+coroutine.wrap(XCCDGMB_fake_script)()
+local function LIHMC_fake_script() -- web.LocalScript 
 	local script = Instance.new('LocalScript', web)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -527,24 +527,24 @@ local function XADKT_fake_script() -- web.LocalScript
 		_G.WebPage.Visible = true
 	end)
 end
-coroutine.wrap(XADKT_fake_script)()
-local function RYAZ_fake_script() -- MultiTool.Loadable 
+coroutine.wrap(LIHMC_fake_script)()
+local function WVOVQZ_fake_script() -- MultiTool.Loadable 
 	local script = Instance.new('LocalScript', MultiTool)
 
 	--gamecheck
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/GameCheck'))()
 	--
 end
-coroutine.wrap(RYAZ_fake_script)()
-local function MUOKB_fake_script() -- MultiTool.Draggable 
+coroutine.wrap(WVOVQZ_fake_script)()
+local function HAHSXC_fake_script() -- MultiTool.Draggable 
 	local script = Instance.new('LocalScript', MultiTool)
 
 	local UserInputService = game:GetService("UserInputService")local gui = script.Parent local dragging local dragInput local dragStart local startPos local function update(input)local delta = input.Position - dragStart gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)end gui.InputBegan:Connect(function(input)if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then dragging = true dragStart = input.Position startPos = gui.Position input.Changed:Connect(function()if input.UserInputState == Enum.UserInputState.End then dragging = false end end)end end)gui.InputChanged:Connect(function(input)if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then dragInput = input end end)UserInputService.InputChanged:Connect(function(input)if input == dragInput and dragging then update(input)end end)
 end
-coroutine.wrap(MUOKB_fake_script)()
-local function VKHX_fake_script() -- MultiTool.Console 
+coroutine.wrap(HAHSXC_fake_script)()
+local function BDGSLPN_fake_script() -- MultiTool.Console 
 	local script = Instance.new('LocalScript', MultiTool)
 
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/ConsoleChatWhatever'))()
 end
-coroutine.wrap(VKHX_fake_script)()
+coroutine.wrap(BDGSLPN_fake_script)()
