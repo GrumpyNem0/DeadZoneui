@@ -1,10 +1,5 @@
-local GUI = game.Players.LocalPlayer.PlayerGui:FindFirstChild("DMT")
-if GUI then
-	GUI:Destroy()
-	print(GUI.Name.." Was already executed, now deleted and executed again! Have fun!")
-else
-	--gui
-	-- Gui to Lua
+local function FFG()
+- Gui to Lua
 -- Version: 3.2
 
 -- Instances:
@@ -606,6 +601,14 @@ local function ZNTKCF_fake_script() -- MultiTool.Console
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/ConsoleChatWhatever'))()
 end
 coroutine.wrap(ZNTKCF_fake_script)()
-
+end
+local GUI = game.Players.LocalPlayer.PlayerGui:FindFirstChild("DMT")
+if GUI then
+	GUI:Destroy()
+	print(GUI.Name.." Was already executed, now deleted and executed again! Have fun!")
+	FFG()
+else
+	--gui
+	FFG()
 	--
 end
