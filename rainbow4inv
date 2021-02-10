@@ -1,0 +1,46 @@
+	local Slotone = game.Players.LocalPlayer.PlayerGui.BackpackGui.Frame["1"]
+	local Slottwo = game.Players.LocalPlayer.PlayerGui.BackpackGui.Frame["2"]
+	local Slotthree = game.Players.LocalPlayer.PlayerGui.BackpackGui.Frame["3"]
+	local Slotfour = game.Players.LocalPlayer.PlayerGui.BackpackGui.Frame["4"]
+	----
+	--1
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		Slotone.ImageColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.01
+	end
+	--2
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		Slottwo.ImageColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.01
+	end
+	--3
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		Slotthree.ImageColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.01
+	end
+	--4
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+
+	counter = 0
+
+	while wait(0.1)do
+		Slotfour.ImageColor3 = Color3.fromHSV(zigzag(counter),1,1)
+
+		counter = counter + 0.01
+	end
+	----
