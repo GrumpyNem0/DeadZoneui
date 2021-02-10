@@ -1,0 +1,16 @@
+function FUNCTION(a)
+	if (a.className == "Part")and(a.Transparency == 1)and(a.Parent == game.Workspace)then
+	    a.Transparency = 0.8
+	    a.CanCollide = false
+	    local highlight=Instance.new("SelectionBox"):Clone()
+	    highlight.Color3 = a.Color
+	    highlight.SurfaceColor3 = a.Color
+	    highlight.Parent = a
+	    highlight.Adornee = a
+	end
+	local b = a:GetDescendants()
+	for i=1,#b do
+		FUNCTION(b[i])
+	end
+end
+FUNCTION(game.Workspace)
