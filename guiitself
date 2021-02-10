@@ -35,6 +35,7 @@ local ESPScript = Instance.new("TextButton")
 local MouseScript = Instance.new("TextButton")
 local Rainbow4Inv = Instance.new("TextButton")
 local RainbowCharacter = Instance.new("TextButton")
+local Fullbright = Instance.new("TextButton")
 local Random = Instance.new("Frame")
 local Edit_2 = Instance.new("Frame")
 local TextLabel = Instance.new("TextLabel")
@@ -341,6 +342,18 @@ RainbowCharacter.TextScaled = true
 RainbowCharacter.TextSize = 14.000
 RainbowCharacter.TextWrapped = true
 
+Fullbright.Name = "Fullbright"
+Fullbright.Parent = ScriptButtons
+Fullbright.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Fullbright.BorderSizePixel = 0
+Fullbright.Size = UDim2.new(0, 200, 0, 20)
+Fullbright.Font = Enum.Font.SourceSans
+Fullbright.Text = "Rainbow Character"
+Fullbright.TextColor3 = Color3.fromRGB(0, 0, 0)
+Fullbright.TextScaled = true
+Fullbright.TextSize = 14.000
+Fullbright.TextWrapped = true
+
 Random.Name = "Random"
 Random.Parent = PageHolder
 Random.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
@@ -453,13 +466,13 @@ web.ImageColor3 = Color3.fromRGB(105, 0, 158)
 
 -- Scripts:
 
-local function EMGRER_fake_script() -- Title.LocalScript 
+local function PEIS_fake_script() -- Title.LocalScript 
 	local script = Instance.new('LocalScript', Title)
 
 	_G.MultiToolTitle = script.Parent
 end
-coroutine.wrap(EMGRER_fake_script)()
-local function RROCSI_fake_script() -- SpeedButton.BttnScript 
+coroutine.wrap(PEIS_fake_script)()
+local function PEESCN_fake_script() -- SpeedButton.BttnScript 
 	local script = Instance.new('LocalScript', SpeedButton)
 
 	_G.PlayerSpeedDMT = "22"
@@ -467,8 +480,8 @@ local function RROCSI_fake_script() -- SpeedButton.BttnScript
 	_G.PlayerSpeedDMT = script.Parent.Parent.SpeedBox.Text
 	end)
 end
-coroutine.wrap(RROCSI_fake_script)()
-local function PTQN_fake_script() -- JumpButton.BttnScript 
+coroutine.wrap(PEESCN_fake_script)()
+local function XCIZ_fake_script() -- JumpButton.BttnScript 
 	local script = Instance.new('LocalScript', JumpButton)
 
 	_G.JumpPowerDMT = "26"
@@ -476,8 +489,8 @@ local function PTQN_fake_script() -- JumpButton.BttnScript
 	_G.JumpPowerDMT = script.Parent.Parent.JumpBox.Text
 	end)
 end
-coroutine.wrap(PTQN_fake_script)()
-local function GLTITJW_fake_script() -- DupeON.BttnScript 
+coroutine.wrap(XCIZ_fake_script)()
+local function ZFDSFK_fake_script() -- DupeON.BttnScript 
 	local script = Instance.new('LocalScript', DupeON)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -489,40 +502,40 @@ local function GLTITJW_fake_script() -- DupeON.BttnScript
 		end
 	end)
 end
-coroutine.wrap(GLTITJW_fake_script)()
-local function QMQTBFE_fake_script() -- DupeOFF.BttnScript 
+coroutine.wrap(ZFDSFK_fake_script)()
+local function SMXT_fake_script() -- DupeOFF.BttnScript 
 	local script = Instance.new('LocalScript', DupeOFF)
 
 	script.parent.MouseButton1Click:Connect(function()
 		_G.DupeDMT = false
 	end)
 end
-coroutine.wrap(QMQTBFE_fake_script)()
-local function CCKZBE_fake_script() -- Speed.LocalScript 
+coroutine.wrap(SMXT_fake_script)()
+local function LVPKGL_fake_script() -- Speed.LocalScript 
 	local script = Instance.new('LocalScript', Speed)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/SpeedScript'))()
 	end)
 end
-coroutine.wrap(CCKZBE_fake_script)()
-local function FNEL_fake_script() -- HighlightSpawns.LocalScript 
+coroutine.wrap(LVPKGL_fake_script)()
+local function ZRGQPW_fake_script() -- HighlightSpawns.LocalScript 
 	local script = Instance.new('LocalScript', HighlightSpawns)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/SpawnerHighlight'))()
 	end)
 end
-coroutine.wrap(FNEL_fake_script)()
-local function EQUW_fake_script() -- ESPScript.LocalScript 
+coroutine.wrap(ZRGQPW_fake_script)()
+local function IXTDIQU_fake_script() -- ESPScript.LocalScript 
 	local script = Instance.new('LocalScript', ESPScript)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/SimpleESP'))()
 	end)
 end
-coroutine.wrap(EQUW_fake_script)()
-local function WRCDF_fake_script() -- MouseScript.LocalScript 
+coroutine.wrap(IXTDIQU_fake_script)()
+local function JZDTH_fake_script() -- MouseScript.LocalScript 
 	local script = Instance.new('LocalScript', MouseScript)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -533,24 +546,32 @@ local function WRCDF_fake_script() -- MouseScript.LocalScript
 		end
 	end)
 end
-coroutine.wrap(WRCDF_fake_script)()
-local function YYKD_fake_script() -- Rainbow4Inv.LocalScript 
+coroutine.wrap(JZDTH_fake_script)()
+local function GFMMUBH_fake_script() -- Rainbow4Inv.LocalScript 
 	local script = Instance.new('LocalScript', Rainbow4Inv)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/rainbow4inv'))()
 	end)
 end
-coroutine.wrap(YYKD_fake_script)()
-local function UHHECG_fake_script() -- RainbowCharacter.LocalScript 
+coroutine.wrap(GFMMUBH_fake_script)()
+local function KWLDW_fake_script() -- RainbowCharacter.LocalScript 
 	local script = Instance.new('LocalScript', RainbowCharacter)
 
 	script.parent.MouseButton1Click:Connect(function()
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/RainbowChar'))()
 	end)
 end
-coroutine.wrap(UHHECG_fake_script)()
-local function EPXNEK_fake_script() -- TextButton.main 
+coroutine.wrap(KWLDW_fake_script)()
+local function EQXCMA_fake_script() -- Fullbright.LocalScript 
+	local script = Instance.new('LocalScript', Fullbright)
+
+	script.parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/Fullbright'))()
+	end)
+end
+coroutine.wrap(EQXCMA_fake_script)()
+local function JOVL_fake_script() -- TextButton.main 
 	local script = Instance.new('LocalScript', TextButton)
 
 	local HttpService = game:GetService("HttpService");
@@ -581,15 +602,15 @@ local function EPXNEK_fake_script() -- TextButton.main
 		SendMessage(webhookaa,script.Parent.Parent.TextBox.Text,game.Players.LocalPlayer.Name)
 	end)
 end
-coroutine.wrap(EPXNEK_fake_script)()
-local function KOUG_fake_script() -- Edit_3.glob 
+coroutine.wrap(JOVL_fake_script)()
+local function YPWK_fake_script() -- Edit_3.glob 
 	local script = Instance.new('LocalScript', Edit_3)
 
 	_G.GGHDMT = script.Parent.TextBox
 	_G.GGDDMT = script.Parent.TextButton
 end
-coroutine.wrap(KOUG_fake_script)()
-local function VIXPS_fake_script() -- PageHolder.glb 
+coroutine.wrap(YPWK_fake_script)()
+local function NNHTYYY_fake_script() -- PageHolder.glb 
 	local script = Instance.new('LocalScript', PageHolder)
 
 	script.Parent.Self.Visible = false
@@ -602,8 +623,8 @@ local function VIXPS_fake_script() -- PageHolder.glb
 	_G.WebPage = script.Parent.WebPage
 	_G.customlegbroketextDMT="haha u broke leg nerd (leg broken use a splint to fix.) -Nemo."
 end
-coroutine.wrap(VIXPS_fake_script)()
-local function YFODHU_fake_script() -- Self_2.LocalScript 
+coroutine.wrap(NNHTYYY_fake_script)()
+local function KLUCTDC_fake_script() -- Self_2.LocalScript 
 	local script = Instance.new('LocalScript', Self_2)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -613,8 +634,8 @@ local function YFODHU_fake_script() -- Self_2.LocalScript
 		_G.WebPage.Visible = false
 	end)
 end
-coroutine.wrap(YFODHU_fake_script)()
-local function LFGO_fake_script() -- rando.LocalScript 
+coroutine.wrap(KLUCTDC_fake_script)()
+local function XJIO_fake_script() -- rando.LocalScript 
 	local script = Instance.new('LocalScript', rando)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -624,8 +645,8 @@ local function LFGO_fake_script() -- rando.LocalScript
 		_G.WebPage.Visible = false
 	end)
 end
-coroutine.wrap(LFGO_fake_script)()
-local function WIOM_fake_script() -- web.LocalScript 
+coroutine.wrap(XJIO_fake_script)()
+local function GGUHC_fake_script() -- web.LocalScript 
 	local script = Instance.new('LocalScript', web)
 
 	script.parent.MouseButton1Click:Connect(function()
@@ -635,8 +656,8 @@ local function WIOM_fake_script() -- web.LocalScript
 		_G.WebPage.Visible = true
 	end)
 end
-coroutine.wrap(WIOM_fake_script)()
-local function TOEAI_fake_script() -- MultiTool.Loadable 
+coroutine.wrap(GGUHC_fake_script)()
+local function CUHCGU_fake_script() -- MultiTool.Loadable 
 	local script = Instance.new('LocalScript', MultiTool)
 
 	--gamecheck
@@ -653,20 +674,20 @@ local function TOEAI_fake_script() -- MultiTool.Loadable
 	wait(10)
 	U:Destroy()
 end
-coroutine.wrap(TOEAI_fake_script)()
-local function YGOACFW_fake_script() -- MultiTool.Draggable 
+coroutine.wrap(CUHCGU_fake_script)()
+local function UDOCBQ_fake_script() -- MultiTool.Draggable 
 	local script = Instance.new('LocalScript', MultiTool)
 
 	local UserInputService = game:GetService("UserInputService")local gui = script.Parent local dragging local dragInput local dragStart local startPos local function update(input)local delta = input.Position - dragStart gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)end gui.InputBegan:Connect(function(input)if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then dragging = true dragStart = input.Position startPos = gui.Position input.Changed:Connect(function()if input.UserInputState == Enum.UserInputState.End then dragging = false end end)end end)gui.InputChanged:Connect(function(input)if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then dragInput = input end end)UserInputService.InputChanged:Connect(function(input)if input == dragInput and dragging then update(input)end end)
 end
-coroutine.wrap(YGOACFW_fake_script)()
-local function IATSKIU_fake_script() -- MultiTool.Console 
+coroutine.wrap(UDOCBQ_fake_script)()
+local function VZPPM_fake_script() -- MultiTool.Console 
 	local script = Instance.new('LocalScript', MultiTool)
 
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/ConsoleChatWhatever'))()
 end
-coroutine.wrap(IATSKIU_fake_script)()
-local function OFNK_fake_script() -- MultiTool.Pressify 
+coroutine.wrap(VZPPM_fake_script)()
+local function VTSNNAS_fake_script() -- MultiTool.Pressify 
 	local script = Instance.new('LocalScript', MultiTool)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -680,4 +701,4 @@ local function OFNK_fake_script() -- MultiTool.Pressify
 		end
 	end)
 end
-coroutine.wrap(OFNK_fake_script)()
+coroutine.wrap(VTSNNAS_fake_script)()
