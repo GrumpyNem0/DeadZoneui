@@ -1,0 +1,25 @@
+function Hightlight(part,color)
+local par = part
+local Box = Instance.new("BoxHandleAdornment")
+Box.Size = part.Size + Vector3.new(0.1, 0.1, 0.1)
+Box.Name = "---"
+Box.Adornee = par
+Box.Color3 = color
+Box.AlwaysOnTop = true
+Box.ZIndex = 5
+Box.Transparency = 0.6
+Box.Parent = part
+end
+while wait() do
+for index, child in pairs(game.Players:GetChildren()) do
+if child.Name ~= game.Players.LocalPlayer.Name then
+if child.Character ~= nil then
+for i, v in pairs(child.Character:GetChildren()) do
+if v:IsA("Part") or v:IsA("MeshPart") then
+Hightlight(v,child.TeamColor.Color)
+end
+end 
+end
+end
+end 
+end
