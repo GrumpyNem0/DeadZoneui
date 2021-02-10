@@ -1,614 +1,617 @@
-local function FFG()
-	-- Gui to Lua
-	-- Version: 3.2
+-- Gui to Lua
+-- Version: 3.2
 
-	-- Instances:
+-- Instances:
 
-	local DMT = Instance.new("ScreenGui")
-	local MultiTool = Instance.new("Frame")
-	local BackgroundFrame = Instance.new("Frame")
-	local UICorner = Instance.new("UICorner")
-	local TopFrame = Instance.new("Frame")
-	local UICorner_2 = Instance.new("UICorner")
-	local Frame = Instance.new("Frame")
-	local Title = Instance.new("TextLabel")
-	local RainbowFrame = Instance.new("Frame")
-	local RainbowFrame_2 = Instance.new("Frame")
-	local nemo = Instance.new("ImageLabel")
-	local PageHolder = Instance.new("Frame")
-	local Self = Instance.new("Frame")
-	local Edit = Instance.new("Frame")
-	local UIGridLayout = Instance.new("UIGridLayout")
-	local SpeedText = Instance.new("TextLabel")
-	local SpeedBox = Instance.new("TextBox")
-	local SpeedButton = Instance.new("TextButton")
-	local JumpText = Instance.new("TextLabel")
-	local JumpBox = Instance.new("TextBox")
-	local JumpButton = Instance.new("TextButton")
-	local DupeText = Instance.new("TextLabel")
-	local DupeON = Instance.new("TextButton")
-	local DupeOFF = Instance.new("TextButton")
-	local ScriptButtons = Instance.new("Frame")
-	local Speed = Instance.new("TextButton")
-	local UIListLayout = Instance.new("UIListLayout")
-	local HighlightSpawns = Instance.new("TextButton")
-	local ESPScript = Instance.new("TextButton")
-	local Random = Instance.new("Frame")
-	local Edit_2 = Instance.new("Frame")
-	local TextLabel = Instance.new("TextLabel")
-	local WebPage = Instance.new("Frame")
-	local Edit_3 = Instance.new("Frame")
-	local TextBox = Instance.new("TextBox")
-	local TextButton = Instance.new("TextButton")
-	local SideFrame = Instance.new("Frame")
-	local UICorner_3 = Instance.new("UICorner")
-	local Frame_2 = Instance.new("Frame")
-	local yeee = Instance.new("Frame")
-	local UIGridLayout_2 = Instance.new("UIGridLayout")
-	local Self_2 = Instance.new("ImageButton")
-	local rando = Instance.new("ImageButton")
-	local web = Instance.new("ImageButton")
+local DMT = Instance.new("ScreenGui")
+local MultiTool = Instance.new("Frame")
+local BackgroundFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TopFrame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local Frame = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local RainbowFrame = Instance.new("Frame")
+local RainbowFrame_2 = Instance.new("Frame")
+local nemo = Instance.new("ImageLabel")
+local PageHolder = Instance.new("Frame")
+local Self = Instance.new("Frame")
+local Edit = Instance.new("Frame")
+local UIGridLayout = Instance.new("UIGridLayout")
+local SpeedText = Instance.new("TextLabel")
+local SpeedBox = Instance.new("TextBox")
+local SpeedButton = Instance.new("TextButton")
+local JumpText = Instance.new("TextLabel")
+local JumpBox = Instance.new("TextBox")
+local JumpButton = Instance.new("TextButton")
+local DupeText = Instance.new("TextLabel")
+local DupeON = Instance.new("TextButton")
+local DupeOFF = Instance.new("TextButton")
+local ScriptButtons = Instance.new("Frame")
+local Speed = Instance.new("TextButton")
+local UIListLayout = Instance.new("UIListLayout")
+local HighlightSpawns = Instance.new("TextButton")
+local ESPScript = Instance.new("TextButton")
+local Random = Instance.new("Frame")
+local Edit_2 = Instance.new("Frame")
+local TextLabel = Instance.new("TextLabel")
+local WebPage = Instance.new("Frame")
+local Edit_3 = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
+local SideFrame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Frame_2 = Instance.new("Frame")
+local yeee = Instance.new("Frame")
+local UIGridLayout_2 = Instance.new("UIGridLayout")
+local Self_2 = Instance.new("ImageButton")
+local rando = Instance.new("ImageButton")
+local web = Instance.new("ImageButton")
 
-	--Properties:
+--Properties:
 
-	DMT.Name = "DMT"
-	DMT.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-	DMT.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+DMT.Name = "DMT"
+DMT.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+DMT.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-	MultiTool.Name = "MultiTool"
-	MultiTool.Parent = DMT
-	MultiTool.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	MultiTool.BackgroundTransparency = 1.000
-	MultiTool.Position = UDim2.new(0.341752172, 0, 0.391100705, 0)
-	MultiTool.Size = UDim2.new(0, 400, 0, 19)
+MultiTool.Name = "MultiTool"
+MultiTool.Parent = DMT
+MultiTool.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MultiTool.BackgroundTransparency = 1.000
+MultiTool.Position = UDim2.new(0.341752172, 0, 0.391100705, 0)
+MultiTool.Size = UDim2.new(0, 400, 0, 19)
 
-	BackgroundFrame.Name = "Background//Frame"
-	BackgroundFrame.Parent = MultiTool
-	BackgroundFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-	BackgroundFrame.BorderSizePixel = 0
-	BackgroundFrame.Position = UDim2.new(0, 0, 0.099999994, 0)
-	BackgroundFrame.Size = UDim2.new(0, 400, 0, 220)
+BackgroundFrame.Name = "Background//Frame"
+BackgroundFrame.Parent = MultiTool
+BackgroundFrame.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+BackgroundFrame.BorderSizePixel = 0
+BackgroundFrame.Position = UDim2.new(0, 0, 0.099999994, 0)
+BackgroundFrame.Size = UDim2.new(0, 400, 0, 220)
 
-	UICorner.Parent = BackgroundFrame
+UICorner.Parent = BackgroundFrame
 
-	TopFrame.Name = "Top//Frame"
-	TopFrame.Parent = BackgroundFrame
-	TopFrame.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
-	TopFrame.Size = UDim2.new(0, 400, 0, 20)
+TopFrame.Name = "Top//Frame"
+TopFrame.Parent = BackgroundFrame
+TopFrame.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+TopFrame.Size = UDim2.new(0, 400, 0, 20)
 
-	UICorner_2.Parent = TopFrame
+UICorner_2.Parent = TopFrame
 
-	Frame.Parent = TopFrame
-	Frame.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
-	Frame.BorderSizePixel = 0
-	Frame.Position = UDim2.new(0.894999981, 0, 0.400000006, 0)
-	Frame.Size = UDim2.new(0, 42, 0, 12)
+Frame.Parent = TopFrame
+Frame.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+Frame.BorderSizePixel = 0
+Frame.Position = UDim2.new(0.894999981, 0, 0.400000006, 0)
+Frame.Size = UDim2.new(0, 42, 0, 12)
 
-	Title.Name = "Title"
-	Title.Parent = TopFrame
-	Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Title.BackgroundTransparency = 1.000
-	Title.BorderSizePixel = 0
-	Title.Position = UDim2.new(0.125, 0, 0, 0)
-	Title.Size = UDim2.new(0, 308, 0, 20)
-	Title.Font = Enum.Font.SourceSans
-	Title.Text = "DEADZONE MULTITOOL"
-	Title.TextColor3 = Color3.fromRGB(0, 0, 0)
-	Title.TextScaled = true
-	Title.TextSize = 14.000
-	Title.TextWrapped = true
+Title.Name = "Title"
+Title.Parent = TopFrame
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderSizePixel = 0
+Title.Position = UDim2.new(0.125, 0, 0, 0)
+Title.Size = UDim2.new(0, 308, 0, 20)
+Title.Font = Enum.Font.SourceSans
+Title.Text = "DEADZONE MULTITOOL"
+Title.TextColor3 = Color3.fromRGB(0, 0, 0)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
 
-	RainbowFrame.Name = "Rainbow//Frame"
-	RainbowFrame.Parent = BackgroundFrame
-	RainbowFrame.BackgroundColor3 = Color3.fromRGB(105, 0, 158)
-	RainbowFrame.BorderSizePixel = 0
-	RainbowFrame.Position = UDim2.new(0.125, 0, 0.0909090936, 0)
-	RainbowFrame.Size = UDim2.new(0, 350, 0, 1)
+RainbowFrame.Name = "Rainbow//Frame"
+RainbowFrame.Parent = BackgroundFrame
+RainbowFrame.BackgroundColor3 = Color3.fromRGB(105, 0, 158)
+RainbowFrame.BorderSizePixel = 0
+RainbowFrame.Position = UDim2.new(0.125, 0, 0.0909090936, 0)
+RainbowFrame.Size = UDim2.new(0, 350, 0, 1)
 
-	RainbowFrame_2.Name = "Rainbow//Frame"
-	RainbowFrame_2.Parent = BackgroundFrame
-	RainbowFrame_2.BackgroundColor3 = Color3.fromRGB(105, 0, 158)
-	RainbowFrame_2.BorderSizePixel = 0
-	RainbowFrame_2.Position = UDim2.new(0.125, 0, 0.0909090936, 0)
-	RainbowFrame_2.Size = UDim2.new(0, 1, 0, 200)
+RainbowFrame_2.Name = "Rainbow//Frame"
+RainbowFrame_2.Parent = BackgroundFrame
+RainbowFrame_2.BackgroundColor3 = Color3.fromRGB(105, 0, 158)
+RainbowFrame_2.BorderSizePixel = 0
+RainbowFrame_2.Position = UDim2.new(0.125, 0, 0.0909090936, 0)
+RainbowFrame_2.Size = UDim2.new(0, 1, 0, 200)
 
-	nemo.Name = "nemo"
-	nemo.Parent = BackgroundFrame
-	nemo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	nemo.BackgroundTransparency = 1.000
-	nemo.Position = UDim2.new(0.4375, 0, 0.277272731, 0)
-	nemo.Size = UDim2.new(0, 100, 0, 100)
-	nemo.Image = "rbxassetid://6225037525"
-	nemo.ImageTransparency = 0.800
+nemo.Name = "nemo"
+nemo.Parent = BackgroundFrame
+nemo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+nemo.BackgroundTransparency = 1.000
+nemo.Position = UDim2.new(0.4375, 0, 0.277272731, 0)
+nemo.Size = UDim2.new(0, 100, 0, 100)
+nemo.Image = "rbxassetid://6225037525"
+nemo.ImageTransparency = 0.800
 
-	PageHolder.Name = "PageHolder"
-	PageHolder.Parent = BackgroundFrame
-	PageHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	PageHolder.BackgroundTransparency = 1.000
-	PageHolder.Position = UDim2.new(0.144999996, 0, 0.131818175, 0)
-	PageHolder.Size = UDim2.new(0, 335, 0, 184)
+PageHolder.Name = "PageHolder"
+PageHolder.Parent = BackgroundFrame
+PageHolder.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PageHolder.BackgroundTransparency = 1.000
+PageHolder.Position = UDim2.new(0.144999996, 0, 0.131818175, 0)
+PageHolder.Size = UDim2.new(0, 335, 0, 184)
 
-	Self.Name = "Self"
-	Self.Parent = PageHolder
-	Self.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-	Self.BorderSizePixel = 0
-	Self.Position = UDim2.new(-0.00126865553, 0, -0.00405138591, 0)
-	Self.Size = UDim2.new(0, 335, 0, 184)
-	Self.Visible = false
+Self.Name = "Self"
+Self.Parent = PageHolder
+Self.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Self.BorderSizePixel = 0
+Self.Position = UDim2.new(-0.00126865553, 0, -0.00405138591, 0)
+Self.Size = UDim2.new(0, 335, 0, 184)
+Self.Visible = false
 
-	Edit.Name = "Edit"
-	Edit.Parent = Self
-	Edit.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
-	Edit.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	Edit.Size = UDim2.new(0, 120, 0, 184)
+Edit.Name = "Edit"
+Edit.Parent = Self
+Edit.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Edit.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Edit.Size = UDim2.new(0, 120, 0, 184)
 
-	UIGridLayout.Parent = Edit
-	UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-	UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
-	UIGridLayout.CellPadding = UDim2.new(0, 0, 0, 0)
-	UIGridLayout.CellSize = UDim2.new(0, 40, 0, 20)
+UIGridLayout.Parent = Edit
+UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellPadding = UDim2.new(0, 0, 0, 0)
+UIGridLayout.CellSize = UDim2.new(0, 40, 0, 20)
 
-	SpeedText.Name = "SpeedText"
-	SpeedText.Parent = Edit
-	SpeedText.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
-	SpeedText.BorderSizePixel = 0
-	SpeedText.Size = UDim2.new(0, 200, 0, 50)
-	SpeedText.Font = Enum.Font.SourceSans
-	SpeedText.Text = "SPEED"
-	SpeedText.TextColor3 = Color3.fromRGB(0, 0, 0)
-	SpeedText.TextScaled = true
-	SpeedText.TextSize = 14.000
-	SpeedText.TextWrapped = true
+SpeedText.Name = "SpeedText"
+SpeedText.Parent = Edit
+SpeedText.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+SpeedText.BorderSizePixel = 0
+SpeedText.Size = UDim2.new(0, 200, 0, 50)
+SpeedText.Font = Enum.Font.SourceSans
+SpeedText.Text = "SPEED"
+SpeedText.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpeedText.TextScaled = true
+SpeedText.TextSize = 14.000
+SpeedText.TextWrapped = true
 
-	SpeedBox.Name = "SpeedBox"
-	SpeedBox.Parent = Edit
-	SpeedBox.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
-	SpeedBox.BorderSizePixel = 0
-	SpeedBox.Size = UDim2.new(0, 200, 0, 50)
-	SpeedBox.Font = Enum.Font.SourceSans
-	SpeedBox.PlaceholderText = "22"
-	SpeedBox.Text = ""
-	SpeedBox.TextColor3 = Color3.fromRGB(0, 0, 0)
-	SpeedBox.TextScaled = true
-	SpeedBox.TextSize = 14.000
-	SpeedBox.TextWrapped = true
+SpeedBox.Name = "SpeedBox"
+SpeedBox.Parent = Edit
+SpeedBox.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+SpeedBox.BorderSizePixel = 0
+SpeedBox.Size = UDim2.new(0, 200, 0, 50)
+SpeedBox.Font = Enum.Font.SourceSans
+SpeedBox.PlaceholderText = "22"
+SpeedBox.Text = ""
+SpeedBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpeedBox.TextScaled = true
+SpeedBox.TextSize = 14.000
+SpeedBox.TextWrapped = true
 
-	SpeedButton.Name = "SpeedButton"
-	SpeedButton.Parent = Edit
-	SpeedButton.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
-	SpeedButton.BorderSizePixel = 0
-	SpeedButton.Size = UDim2.new(0, 200, 0, 50)
-	SpeedButton.Font = Enum.Font.SourceSans
-	SpeedButton.Text = "SET"
-	SpeedButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-	SpeedButton.TextScaled = true
-	SpeedButton.TextSize = 14.000
-	SpeedButton.TextWrapped = true
+SpeedButton.Name = "SpeedButton"
+SpeedButton.Parent = Edit
+SpeedButton.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+SpeedButton.BorderSizePixel = 0
+SpeedButton.Size = UDim2.new(0, 200, 0, 50)
+SpeedButton.Font = Enum.Font.SourceSans
+SpeedButton.Text = "SET"
+SpeedButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+SpeedButton.TextScaled = true
+SpeedButton.TextSize = 14.000
+SpeedButton.TextWrapped = true
 
-	JumpText.Name = "JumpText"
-	JumpText.Parent = Edit
-	JumpText.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
-	JumpText.BorderSizePixel = 0
-	JumpText.Size = UDim2.new(0, 200, 0, 50)
-	JumpText.Font = Enum.Font.SourceSans
-	JumpText.Text = "JUMP"
-	JumpText.TextColor3 = Color3.fromRGB(0, 0, 0)
-	JumpText.TextScaled = true
-	JumpText.TextSize = 14.000
-	JumpText.TextWrapped = true
+JumpText.Name = "JumpText"
+JumpText.Parent = Edit
+JumpText.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+JumpText.BorderSizePixel = 0
+JumpText.Size = UDim2.new(0, 200, 0, 50)
+JumpText.Font = Enum.Font.SourceSans
+JumpText.Text = "JUMP"
+JumpText.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpText.TextScaled = true
+JumpText.TextSize = 14.000
+JumpText.TextWrapped = true
 
-	JumpBox.Name = "JumpBox"
-	JumpBox.Parent = Edit
-	JumpBox.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
-	JumpBox.BorderSizePixel = 0
-	JumpBox.Size = UDim2.new(0, 200, 0, 50)
-	JumpBox.Font = Enum.Font.SourceSans
-	JumpBox.PlaceholderText = "26"
-	JumpBox.Text = ""
-	JumpBox.TextColor3 = Color3.fromRGB(0, 0, 0)
-	JumpBox.TextScaled = true
-	JumpBox.TextSize = 14.000
-	JumpBox.TextWrapped = true
+JumpBox.Name = "JumpBox"
+JumpBox.Parent = Edit
+JumpBox.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+JumpBox.BorderSizePixel = 0
+JumpBox.Size = UDim2.new(0, 200, 0, 50)
+JumpBox.Font = Enum.Font.SourceSans
+JumpBox.PlaceholderText = "26"
+JumpBox.Text = ""
+JumpBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpBox.TextScaled = true
+JumpBox.TextSize = 14.000
+JumpBox.TextWrapped = true
 
-	JumpButton.Name = "JumpButton"
-	JumpButton.Parent = Edit
-	JumpButton.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
-	JumpButton.BorderSizePixel = 0
-	JumpButton.Size = UDim2.new(0, 200, 0, 50)
-	JumpButton.Font = Enum.Font.SourceSans
-	JumpButton.Text = "SET"
-	JumpButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-	JumpButton.TextScaled = true
-	JumpButton.TextSize = 14.000
-	JumpButton.TextWrapped = true
+JumpButton.Name = "JumpButton"
+JumpButton.Parent = Edit
+JumpButton.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+JumpButton.BorderSizePixel = 0
+JumpButton.Size = UDim2.new(0, 200, 0, 50)
+JumpButton.Font = Enum.Font.SourceSans
+JumpButton.Text = "SET"
+JumpButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+JumpButton.TextScaled = true
+JumpButton.TextSize = 14.000
+JumpButton.TextWrapped = true
 
-	DupeText.Name = "DupeText"
-	DupeText.Parent = Edit
-	DupeText.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
-	DupeText.BorderSizePixel = 0
-	DupeText.Size = UDim2.new(0, 200, 0, 50)
-	DupeText.Font = Enum.Font.SourceSans
-	DupeText.Text = "DUPE"
-	DupeText.TextColor3 = Color3.fromRGB(0, 0, 0)
-	DupeText.TextScaled = true
-	DupeText.TextSize = 14.000
-	DupeText.TextWrapped = true
+DupeText.Name = "DupeText"
+DupeText.Parent = Edit
+DupeText.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+DupeText.BorderSizePixel = 0
+DupeText.Size = UDim2.new(0, 200, 0, 50)
+DupeText.Font = Enum.Font.SourceSans
+DupeText.Text = "DUPE"
+DupeText.TextColor3 = Color3.fromRGB(0, 0, 0)
+DupeText.TextScaled = true
+DupeText.TextSize = 14.000
+DupeText.TextWrapped = true
 
-	DupeON.Name = "DupeON"
-	DupeON.Parent = Edit
-	DupeON.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
-	DupeON.BorderSizePixel = 0
-	DupeON.Size = UDim2.new(0, 200, 0, 50)
-	DupeON.Font = Enum.Font.SourceSans
-	DupeON.Text = "ON"
-	DupeON.TextColor3 = Color3.fromRGB(0, 0, 0)
-	DupeON.TextScaled = true
-	DupeON.TextSize = 14.000
-	DupeON.TextWrapped = true
+DupeON.Name = "DupeON"
+DupeON.Parent = Edit
+DupeON.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+DupeON.BorderSizePixel = 0
+DupeON.Size = UDim2.new(0, 200, 0, 50)
+DupeON.Font = Enum.Font.SourceSans
+DupeON.Text = "ON"
+DupeON.TextColor3 = Color3.fromRGB(0, 0, 0)
+DupeON.TextScaled = true
+DupeON.TextSize = 14.000
+DupeON.TextWrapped = true
 
-	DupeOFF.Name = "DupeOFF"
-	DupeOFF.Parent = Edit
-	DupeOFF.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
-	DupeOFF.BorderSizePixel = 0
-	DupeOFF.Size = UDim2.new(0, 200, 0, 50)
-	DupeOFF.Font = Enum.Font.SourceSans
-	DupeOFF.Text = "OFF"
-	DupeOFF.TextColor3 = Color3.fromRGB(0, 0, 0)
-	DupeOFF.TextScaled = true
-	DupeOFF.TextSize = 14.000
-	DupeOFF.TextWrapped = true
+DupeOFF.Name = "DupeOFF"
+DupeOFF.Parent = Edit
+DupeOFF.BackgroundColor3 = Color3.fromRGB(107, 107, 107)
+DupeOFF.BorderSizePixel = 0
+DupeOFF.Size = UDim2.new(0, 200, 0, 50)
+DupeOFF.Font = Enum.Font.SourceSans
+DupeOFF.Text = "OFF"
+DupeOFF.TextColor3 = Color3.fromRGB(0, 0, 0)
+DupeOFF.TextScaled = true
+DupeOFF.TextSize = 14.000
+DupeOFF.TextWrapped = true
 
-	ScriptButtons.Name = "ScriptButtons"
-	ScriptButtons.Parent = Self
-	ScriptButtons.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
-	ScriptButtons.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	ScriptButtons.Position = UDim2.new(0.385074615, 0, 0, 0)
-	ScriptButtons.Size = UDim2.new(0, 200, 0, 184)
+ScriptButtons.Name = "ScriptButtons"
+ScriptButtons.Parent = Self
+ScriptButtons.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+ScriptButtons.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ScriptButtons.Position = UDim2.new(0.385074615, 0, 0, 0)
+ScriptButtons.Size = UDim2.new(0, 200, 0, 184)
 
-	Speed.Name = "Speed"
-	Speed.Parent = ScriptButtons
-	Speed.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-	Speed.BorderSizePixel = 0
-	Speed.Size = UDim2.new(0, 200, 0, 20)
-	Speed.Font = Enum.Font.SourceSans
-	Speed.Text = "Player Stats {Speed/Jump}"
-	Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
-	Speed.TextScaled = true
-	Speed.TextSize = 14.000
-	Speed.TextWrapped = true
+Speed.Name = "Speed"
+Speed.Parent = ScriptButtons
+Speed.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+Speed.BorderSizePixel = 0
+Speed.Size = UDim2.new(0, 200, 0, 20)
+Speed.Font = Enum.Font.SourceSans
+Speed.Text = "Player Stats {Speed/Jump}"
+Speed.TextColor3 = Color3.fromRGB(0, 0, 0)
+Speed.TextScaled = true
+Speed.TextSize = 14.000
+Speed.TextWrapped = true
 
-	UIListLayout.Parent = ScriptButtons
-	UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Parent = ScriptButtons
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
 
-	HighlightSpawns.Name = "HighlightSpawns"
-	HighlightSpawns.Parent = ScriptButtons
-	HighlightSpawns.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-	HighlightSpawns.BorderSizePixel = 0
-	HighlightSpawns.Size = UDim2.new(0, 200, 0, 20)
-	HighlightSpawns.Font = Enum.Font.SourceSans
-	HighlightSpawns.Text = "Highlight Spawns"
-	HighlightSpawns.TextColor3 = Color3.fromRGB(0, 0, 0)
-	HighlightSpawns.TextScaled = true
-	HighlightSpawns.TextSize = 14.000
-	HighlightSpawns.TextWrapped = true
+HighlightSpawns.Name = "HighlightSpawns"
+HighlightSpawns.Parent = ScriptButtons
+HighlightSpawns.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+HighlightSpawns.BorderSizePixel = 0
+HighlightSpawns.Size = UDim2.new(0, 200, 0, 20)
+HighlightSpawns.Font = Enum.Font.SourceSans
+HighlightSpawns.Text = "Highlight Spawns"
+HighlightSpawns.TextColor3 = Color3.fromRGB(0, 0, 0)
+HighlightSpawns.TextScaled = true
+HighlightSpawns.TextSize = 14.000
+HighlightSpawns.TextWrapped = true
 
-	ESPScript.Name = "ESPScript"
-	ESPScript.Parent = ScriptButtons
-	ESPScript.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
-	ESPScript.BorderSizePixel = 0
-	ESPScript.Size = UDim2.new(0, 200, 0, 20)
-	ESPScript.Font = Enum.Font.SourceSans
-	ESPScript.Text = "Simple ESP"
-	ESPScript.TextColor3 = Color3.fromRGB(0, 0, 0)
-	ESPScript.TextScaled = true
-	ESPScript.TextSize = 14.000
-	ESPScript.TextWrapped = true
+ESPScript.Name = "ESPScript"
+ESPScript.Parent = ScriptButtons
+ESPScript.BackgroundColor3 = Color3.fromRGB(61, 61, 61)
+ESPScript.BorderSizePixel = 0
+ESPScript.Size = UDim2.new(0, 200, 0, 20)
+ESPScript.Font = Enum.Font.SourceSans
+ESPScript.Text = "Simple ESP"
+ESPScript.TextColor3 = Color3.fromRGB(0, 0, 0)
+ESPScript.TextScaled = true
+ESPScript.TextSize = 14.000
+ESPScript.TextWrapped = true
 
-	Random.Name = "Random"
-	Random.Parent = PageHolder
-	Random.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-	Random.BorderSizePixel = 0
-	Random.Position = UDim2.new(-0.00126865553, 0, -0.00405138591, 0)
-	Random.Size = UDim2.new(0, 335, 0, 184)
-	Random.Visible = false
+Random.Name = "Random"
+Random.Parent = PageHolder
+Random.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Random.BorderSizePixel = 0
+Random.Position = UDim2.new(-0.00126865553, 0, -0.00405138591, 0)
+Random.Size = UDim2.new(0, 335, 0, 184)
+Random.Visible = false
 
-	Edit_2.Name = "Edit"
-	Edit_2.Parent = Random
-	Edit_2.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
-	Edit_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	Edit_2.Size = UDim2.new(0, 329, 0, 184)
+Edit_2.Name = "Edit"
+Edit_2.Parent = Random
+Edit_2.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Edit_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Edit_2.Size = UDim2.new(0, 329, 0, 184)
 
-	TextLabel.Parent = Edit_2
-	TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	TextLabel.Position = UDim2.new(0.243161097, 0, 0.173913032, 0)
-	TextLabel.Size = UDim2.new(0, 200, 0, 50)
-	TextLabel.Font = Enum.Font.SourceSans
-	TextLabel.Text = "not done"
-	TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
-	TextLabel.TextSize = 14.000
+TextLabel.Parent = Edit_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(0.243161097, 0, 0.173913032, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "not done"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
 
-	WebPage.Name = "WebPage"
-	WebPage.Parent = PageHolder
-	WebPage.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
-	WebPage.BorderSizePixel = 0
-	WebPage.Position = UDim2.new(-0.00126865553, 0, -0.00405138591, 0)
-	WebPage.Size = UDim2.new(0, 335, 0, 184)
-	WebPage.Visible = false
+WebPage.Name = "WebPage"
+WebPage.Parent = PageHolder
+WebPage.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+WebPage.BorderSizePixel = 0
+WebPage.Position = UDim2.new(-0.00126865553, 0, -0.00405138591, 0)
+WebPage.Size = UDim2.new(0, 335, 0, 184)
+WebPage.Visible = false
 
-	Edit_3.Name = "Edit"
-	Edit_3.Parent = WebPage
-	Edit_3.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
-	Edit_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-	Edit_3.Size = UDim2.new(0, 335, 0, 184)
+Edit_3.Name = "Edit"
+Edit_3.Parent = WebPage
+Edit_3.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+Edit_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Edit_3.Size = UDim2.new(0, 335, 0, 184)
 
-	TextBox.Parent = Edit_3
-	TextBox.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
-	TextBox.BorderSizePixel = 0
-	TextBox.Size = UDim2.new(0, 335, 0, 164)
-	TextBox.Font = Enum.Font.SourceSans
-	TextBox.PlaceholderText = ">> Here's where you can report a toxic player so we can target them when we see them and  where  you can give feedback or issues you run into"
-	TextBox.Text = ""
-	TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
-	TextBox.TextSize = 20.000
-	TextBox.TextWrapped = true
+TextBox.Parent = Edit_3
+TextBox.BackgroundColor3 = Color3.fromRGB(53, 53, 53)
+TextBox.BorderSizePixel = 0
+TextBox.Size = UDim2.new(0, 335, 0, 164)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderText = ">> Here's where you can report a toxic player so we can target them when we see them and  where  you can give feedback or issues you run into"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 20.000
+TextBox.TextWrapped = true
 
-	TextButton.Parent = Edit_3
-	TextButton.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
-	TextButton.BorderSizePixel = 0
-	TextButton.Position = UDim2.new(0, 0, 0.891304314, 0)
-	TextButton.Size = UDim2.new(0, 335, 0, 20)
-	TextButton.Font = Enum.Font.SourceSans
-	TextButton.Text = "Send"
-	TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-	TextButton.TextScaled = true
-	TextButton.TextSize = 14.000
-	TextButton.TextWrapped = true
+TextButton.Parent = Edit_3
+TextButton.BackgroundColor3 = Color3.fromRGB(77, 77, 77)
+TextButton.BorderSizePixel = 0
+TextButton.Position = UDim2.new(0, 0, 0.891304314, 0)
+TextButton.Size = UDim2.new(0, 335, 0, 20)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Send"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 14.000
+TextButton.TextWrapped = true
 
-	SideFrame.Name = "Side//Frame"
-	SideFrame.Parent = BackgroundFrame
-	SideFrame.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
-	SideFrame.Size = UDim2.new(0, 50, 0, 220)
+SideFrame.Name = "Side//Frame"
+SideFrame.Parent = BackgroundFrame
+SideFrame.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+SideFrame.Size = UDim2.new(0, 50, 0, 220)
 
-	UICorner_3.Parent = SideFrame
+UICorner_3.Parent = SideFrame
 
-	Frame_2.Parent = SideFrame
-	Frame_2.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
-	Frame_2.BorderSizePixel = 0
-	Frame_2.Position = UDim2.new(0.639999986, 0, 0.931818187, 0)
-	Frame_2.Size = UDim2.new(0, 18, 0, 15)
+Frame_2.Parent = SideFrame
+Frame_2.BackgroundColor3 = Color3.fromRGB(81, 81, 81)
+Frame_2.BorderSizePixel = 0
+Frame_2.Position = UDim2.new(0.639999986, 0, 0.931818187, 0)
+Frame_2.Size = UDim2.new(0, 18, 0, 15)
 
-	yeee.Name = "yeee"
-	yeee.Parent = SideFrame
-	yeee.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	yeee.BackgroundTransparency = 1.000
-	yeee.BorderSizePixel = 0
-	yeee.Position = UDim2.new(0, 0, 0.0954545438, 0)
-	yeee.Size = UDim2.new(0, 50, 0, 184)
+yeee.Name = "yeee"
+yeee.Parent = SideFrame
+yeee.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+yeee.BackgroundTransparency = 1.000
+yeee.BorderSizePixel = 0
+yeee.Position = UDim2.new(0, 0, 0.0954545438, 0)
+yeee.Size = UDim2.new(0, 50, 0, 184)
 
-	UIGridLayout_2.Parent = yeee
-	UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
-	UIGridLayout_2.CellSize = UDim2.new(0, 50, 0, 50)
+UIGridLayout_2.Parent = yeee
+UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout_2.CellSize = UDim2.new(0, 50, 0, 50)
 
-	Self_2.Name = "Self"
-	Self_2.Parent = yeee
-	Self_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	Self_2.BackgroundTransparency = 1.000
-	Self_2.Size = UDim2.new(0, 100, 0, 100)
-	Self_2.Image = "rbxassetid://2242016188"
-	Self_2.ImageColor3 = Color3.fromRGB(105, 0, 158)
+Self_2.Name = "Self"
+Self_2.Parent = yeee
+Self_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Self_2.BackgroundTransparency = 1.000
+Self_2.Size = UDim2.new(0, 100, 0, 100)
+Self_2.Image = "rbxassetid://2242016188"
+Self_2.ImageColor3 = Color3.fromRGB(105, 0, 158)
 
-	rando.Name = "rando"
-	rando.Parent = yeee
-	rando.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	rando.BackgroundTransparency = 1.000
-	rando.Size = UDim2.new(0, 100, 0, 100)
-	rando.Image = "rbxassetid://3228864276"
-	rando.ImageColor3 = Color3.fromRGB(105, 0, 158)
+rando.Name = "rando"
+rando.Parent = yeee
+rando.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+rando.BackgroundTransparency = 1.000
+rando.Size = UDim2.new(0, 100, 0, 100)
+rando.Image = "rbxassetid://3228864276"
+rando.ImageColor3 = Color3.fromRGB(105, 0, 158)
 
-	web.Name = "web"
-	web.Parent = yeee
-	web.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-	web.BackgroundTransparency = 1.000
-	web.Position = UDim2.new(0, 0, 0.597826064, 0)
-	web.Size = UDim2.new(0, 50, 0, 43)
-	web.Image = "rbxassetid://37012516"
-	web.ImageColor3 = Color3.fromRGB(105, 0, 158)
+web.Name = "web"
+web.Parent = yeee
+web.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+web.BackgroundTransparency = 1.000
+web.Position = UDim2.new(0, 0, 0.597826064, 0)
+web.Size = UDim2.new(0, 50, 0, 43)
+web.Image = "rbxassetid://37012516"
+web.ImageColor3 = Color3.fromRGB(105, 0, 158)
 
-	-- Scripts:
+-- Scripts:
 
-	local function SCPI_fake_script() -- Title.LocalScript 
-		local script = Instance.new('LocalScript', Title)
+local function ZZAUBP_fake_script() -- Title.LocalScript 
+	local script = Instance.new('LocalScript', Title)
 
-		_G.MultiToolTitle = script.Parent
-	end
-	coroutine.wrap(SCPI_fake_script)()
-	local function BZRO_fake_script() -- SpeedButton.BttnScript 
-		local script = Instance.new('LocalScript', SpeedButton)
+	_G.MultiToolTitle = script.Parent
+end
+coroutine.wrap(ZZAUBP_fake_script)()
+local function CRHQY_fake_script() -- SpeedButton.BttnScript 
+	local script = Instance.new('LocalScript', SpeedButton)
 
-		_G.PlayerSpeedDMT = "22"
-		script.parent.MouseButton1Click:Connect(function()
-			_G.PlayerSpeedDMT = script.Parent.Parent.SpeedBox.Text
-		end)
-	end
-	coroutine.wrap(BZRO_fake_script)()
-	local function IOXQWO_fake_script() -- JumpButton.BttnScript 
-		local script = Instance.new('LocalScript', JumpButton)
+	_G.PlayerSpeedDMT = "22"
+	script.parent.MouseButton1Click:Connect(function()
+	_G.PlayerSpeedDMT = script.Parent.Parent.SpeedBox.Text
+	end)
+end
+coroutine.wrap(CRHQY_fake_script)()
+local function LGYVL_fake_script() -- JumpButton.BttnScript 
+	local script = Instance.new('LocalScript', JumpButton)
 
-		_G.JumpPowerDMT = "26"
-		script.parent.MouseButton1Click:Connect(function()
-			_G.JumpPowerDMT = script.Parent.Parent.JumpBox.Text
-		end)
-	end
-	coroutine.wrap(IOXQWO_fake_script)()
-	local function LMXQL_fake_script() -- DupeON.BttnScript 
-		local script = Instance.new('LocalScript', DupeON)
+	_G.JumpPowerDMT = "26"
+	script.parent.MouseButton1Click:Connect(function()
+	_G.JumpPowerDMT = script.Parent.Parent.JumpBox.Text
+	end)
+end
+coroutine.wrap(LGYVL_fake_script)()
+local function CPHJMS_fake_script() -- DupeON.BttnScript 
+	local script = Instance.new('LocalScript', DupeON)
 
-		script.parent.MouseButton1Click:Connect(function()
-			_G.DupeDMT = true
-			while _G.DupeDMT do
-				wait(0.1)
-				game.ReplicatedStorage.RemoteFunctions.MoveItem:InvokeServer(47,48)
-				game.ReplicatedStorage.RemoteFunctions.MoveItem:InvokeServer(48,47)
-			end
-		end)
-	end
-	coroutine.wrap(LMXQL_fake_script)()
-	local function FAYZ_fake_script() -- DupeOFF.BttnScript 
-		local script = Instance.new('LocalScript', DupeOFF)
-
-		script.parent.MouseButton1Click:Connect(function()
-			_G.DupeDMT = false
-		end)
-	end
-	coroutine.wrap(FAYZ_fake_script)()
-	local function AUDRJ_fake_script() -- Speed.LocalScript 
-		local script = Instance.new('LocalScript', Speed)
-
-		script.parent.MouseButton1Click:Connect(function()
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/SpeedScript'))()
-		end)
-	end
-	coroutine.wrap(AUDRJ_fake_script)()
-	local function LKMAVVB_fake_script() -- HighlightSpawns.LocalScript 
-		local script = Instance.new('LocalScript', HighlightSpawns)
-
-		script.parent.MouseButton1Click:Connect(function()
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/SpawnerHighlight'))()
-		end)
-	end
-	coroutine.wrap(LKMAVVB_fake_script)()
-	local function NZQS_fake_script() -- ESPScript.LocalScript 
-		local script = Instance.new('LocalScript', ESPScript)
-
-		script.parent.MouseButton1Click:Connect(function()
-			loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/SimpleESP'))()
-		end)
-	end
-	coroutine.wrap(NZQS_fake_script)()
-	local function GXMS_fake_script() -- PageHolder.glb 
-		local script = Instance.new('LocalScript', PageHolder)
-
-		script.Parent.Self.Visible = false
-		script.Parent.Random.Visible = false
-		script.Parent.WebPage.Visible = false
-		--
-		--
-		_G.Self = script.Parent.Self
-		_G.Rando = script.Parent.Random
-		_G.WebPage = script.Parent.WebPage
-		_G.customlegbroketextDMT="haha u broke leg nerd (leg broken use a splint to fix.) -Nemo."
-	end
-	coroutine.wrap(GXMS_fake_script)()
-	local function ASEQLYM_fake_script() -- TextButton.main 
-		local script = Instance.new('LocalScript', TextButton)
-
-		local HttpService = game:GetService("HttpService");
-		local webhookaa = "https://discord.com/api/webhooks/807852575818907659/W_ATw4FCkP5eKmAV-Y2Hqww5hnnx5bYgmqKo70DL4QD_OGe1grMStJq4TAdlaBDc7qvQ"
-		local function SendMessage(Webhook, Message, Botname) 
-			if not string.find(Webhook, "https://discord.com/api/webhooks/") then 
-				return error("Send a valid URL");
-			end
-			local Name;
-			local API = "http://buritoman69.glitch.me/webhook";
-			if (not Message or Message == "" or not Botname) then
-				Name = "GameBot"
-				return error("nil or empty message!")
-			else 
-				Name = Botname;
-			end
-			local Body = {
-				['Key'] = tostring("applesaregood"),
-				['Message'] = tostring(Message),
-				['Name'] = Name,
-				['Webhook'] = Webhook    
-			}
-			Body = HttpService:JSONEncode(Body);
-			local Data = game:HttpPost(API, Body, false, "application/json")
-			return Data or nil;
+	script.parent.MouseButton1Click:Connect(function()
+		_G.DupeDMT = true
+		while _G.DupeDMT do
+			wait(0.1)
+			game.ReplicatedStorage.RemoteFunctions.MoveItem:InvokeServer(47,48)
+			game.ReplicatedStorage.RemoteFunctions.MoveItem:InvokeServer(48,47)
 		end
-		script.Parent.MouseButton1Click:Connect(function()
-			SendMessage(webhookaa,script.Parent.Parent.TextBox.Text,game.Players.LocalPlayer.Name)
-		end)
-	end
-	coroutine.wrap(ASEQLYM_fake_script)()
-	local function QDLCH_fake_script() -- Edit_3.glob 
-		local script = Instance.new('LocalScript', Edit_3)
-
-		_G.GGHDMT = script.Parent.TextBox
-		_G.GGDDMT = script.Parent.TextButton
-	end
-	coroutine.wrap(QDLCH_fake_script)()
-	local function SYXTVNC_fake_script() -- Self_2.LocalScript 
-		local script = Instance.new('LocalScript', Self_2)
-
-		script.parent.MouseButton1Click:Connect(function()
-			_G.MultiToolTitle.Text = "DEADZONE MULTITOOL // SELF"
-			_G.Self.Visible = true
-			_G.Rando.Visible = false
-			_G.WebPage.Visible = false
-		end)
-	end
-	coroutine.wrap(SYXTVNC_fake_script)()
-	local function KHHQU_fake_script() -- rando.LocalScript 
-		local script = Instance.new('LocalScript', rando)
-
-		script.parent.MouseButton1Click:Connect(function()
-			_G.MultiToolTitle.Text = "DEADZONE MULTITOOL // RANDO!"
-			_G.Self.Visible = false
-			_G.Rando.Visible = true
-			_G.WebPage.Visible = false
-		end)
-	end
-	coroutine.wrap(KHHQU_fake_script)()
-	local function PLSB_fake_script() -- web.LocalScript 
-		local script = Instance.new('LocalScript', web)
-
-		script.parent.MouseButton1Click:Connect(function()
-			_G.MultiToolTitle.Text = "DEADZONE MULTITOOL // HELP!"
-			_G.Self.Visible = false
-			_G.Rando.Visible = false
-			_G.WebPage.Visible = true
-		end)
-	end
-	coroutine.wrap(PLSB_fake_script)()
-	local function OYNJR_fake_script() -- MultiTool.Loadable 
-		local script = Instance.new('LocalScript', MultiTool)
-
-		--gamecheck
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/GameCheck'))()
-		--sound
-		local U = Instance.new("Sound")
-		U.Parent = game.Workspace
-		U.SoundId = "rbxassetid://6372940955"
-		U.Volume = 2
-		U:Play()
-		wait(2)
-		U.SoundId = "rbxassetid://6372946701"
-		U:Play()
-		wait(10)
-		U:Destroy()
-	end
-	coroutine.wrap(OYNJR_fake_script)()
-	local function PZVBVF_fake_script() -- MultiTool.Draggable 
-		local script = Instance.new('LocalScript', MultiTool)
-
-		local UserInputService = game:GetService("UserInputService")local gui = script.Parent local dragging local dragInput local dragStart local startPos local function update(input)local delta = input.Position - dragStart gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)end gui.InputBegan:Connect(function(input)if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then dragging = true dragStart = input.Position startPos = gui.Position input.Changed:Connect(function()if input.UserInputState == Enum.UserInputState.End then dragging = false end end)end end)gui.InputChanged:Connect(function(input)if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then dragInput = input end end)UserInputService.InputChanged:Connect(function(input)if input == dragInput and dragging then update(input)end end)
-	end
-	coroutine.wrap(PZVBVF_fake_script)()
-	local function ZNTKCF_fake_script() -- MultiTool.Console 
-		local script = Instance.new('LocalScript', MultiTool)
-
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/ConsoleChatWhatever'))()
-	end
-	coroutine.wrap(ZNTKCF_fake_script)()
+	end)
 end
-local GUI = game.Players.LocalPlayer.PlayerGui:FindFirstChild("DMT")
-if GUI then
-	GUI:Destroy()
-	print(GUI.Name.." Was already executed, now deleted and executed again! Have fun!")
-	FFG()
-else
-	--gui
-	FFG()
+coroutine.wrap(CPHJMS_fake_script)()
+local function XVVNQDV_fake_script() -- DupeOFF.BttnScript 
+	local script = Instance.new('LocalScript', DupeOFF)
+
+	script.parent.MouseButton1Click:Connect(function()
+		_G.DupeDMT = false
+	end)
+end
+coroutine.wrap(XVVNQDV_fake_script)()
+local function QAMCUGE_fake_script() -- Speed.LocalScript 
+	local script = Instance.new('LocalScript', Speed)
+
+	script.parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/SpeedScript'))()
+	end)
+end
+coroutine.wrap(QAMCUGE_fake_script)()
+local function GUSL_fake_script() -- HighlightSpawns.LocalScript 
+	local script = Instance.new('LocalScript', HighlightSpawns)
+
+	script.parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/SpawnerHighlight'))()
+	end)
+end
+coroutine.wrap(GUSL_fake_script)()
+local function IXZQIM_fake_script() -- ESPScript.LocalScript 
+	local script = Instance.new('LocalScript', ESPScript)
+
+	script.parent.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/SimpleESP'))()
+	end)
+end
+coroutine.wrap(IXZQIM_fake_script)()
+local function FFGC_fake_script() -- PageHolder.glb 
+	local script = Instance.new('LocalScript', PageHolder)
+
+	script.Parent.Self.Visible = false
+	script.Parent.Random.Visible = false
+	script.Parent.WebPage.Visible = false
 	--
+	--
+	_G.Self = script.Parent.Self
+	_G.Rando = script.Parent.Random
+	_G.WebPage = script.Parent.WebPage
+	_G.customlegbroketextDMT="haha u broke leg nerd (leg broken use a splint to fix.) -Nemo."
 end
+coroutine.wrap(FFGC_fake_script)()
+local function ZVVV_fake_script() -- TextButton.main 
+	local script = Instance.new('LocalScript', TextButton)
+
+	local HttpService = game:GetService("HttpService");
+	local webhookaa = "https://discord.com/api/webhooks/807852575818907659/W_ATw4FCkP5eKmAV-Y2Hqww5hnnx5bYgmqKo70DL4QD_OGe1grMStJq4TAdlaBDc7qvQ"
+	local function SendMessage(Webhook, Message, Botname) 
+		if not string.find(Webhook, "https://discord.com/api/webhooks/") then 
+			return error("Send a valid URL");
+		end
+		local Name;
+		local API = "http://buritoman69.glitch.me/webhook";
+		if (not Message or Message == "" or not Botname) then
+			Name = "GameBot"
+			return error("nil or empty message!")
+		else 
+			Name = Botname;
+		end
+		local Body = {
+			['Key'] = tostring("applesaregood"),
+			['Message'] = tostring(Message),
+			['Name'] = Name,
+			['Webhook'] = Webhook    
+		}
+		Body = HttpService:JSONEncode(Body);
+		local Data = game:HttpPost(API, Body, false, "application/json")
+		return Data or nil;
+	end
+	script.Parent.MouseButton1Click:Connect(function()
+		SendMessage(webhookaa,script.Parent.Parent.TextBox.Text,game.Players.LocalPlayer.Name)
+	end)
+end
+coroutine.wrap(ZVVV_fake_script)()
+local function GBVN_fake_script() -- Edit_3.glob 
+	local script = Instance.new('LocalScript', Edit_3)
+
+	_G.GGHDMT = script.Parent.TextBox
+	_G.GGDDMT = script.Parent.TextButton
+end
+coroutine.wrap(GBVN_fake_script)()
+local function NFZQGU_fake_script() -- Self_2.LocalScript 
+	local script = Instance.new('LocalScript', Self_2)
+
+	script.parent.MouseButton1Click:Connect(function()
+		_G.MultiToolTitle.Text = "DEADZONE MULTITOOL // SELF"
+		_G.Self.Visible = true
+		_G.Rando.Visible = false
+		_G.WebPage.Visible = false
+	end)
+end
+coroutine.wrap(NFZQGU_fake_script)()
+local function YURVURZ_fake_script() -- rando.LocalScript 
+	local script = Instance.new('LocalScript', rando)
+
+	script.parent.MouseButton1Click:Connect(function()
+		_G.MultiToolTitle.Text = "DEADZONE MULTITOOL // RANDO!"
+		_G.Self.Visible = false
+		_G.Rando.Visible = true
+		_G.WebPage.Visible = false
+	end)
+end
+coroutine.wrap(YURVURZ_fake_script)()
+local function UQUZ_fake_script() -- web.LocalScript 
+	local script = Instance.new('LocalScript', web)
+
+	script.parent.MouseButton1Click:Connect(function()
+		_G.MultiToolTitle.Text = "DEADZONE MULTITOOL // HELP!"
+		_G.Self.Visible = false
+		_G.Rando.Visible = false
+		_G.WebPage.Visible = true
+	end)
+end
+coroutine.wrap(UQUZ_fake_script)()
+local function VCRU_fake_script() -- MultiTool.Loadable 
+	local script = Instance.new('LocalScript', MultiTool)
+
+	--gamecheck
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/GameCheck'))()
+	--sound
+	local U = Instance.new("Sound")
+	U.Parent = game.Workspace
+	U.SoundId = "rbxassetid://6372940955"
+	U.Volume = 2
+	U:Play()
+	wait(2)
+	U.SoundId = "rbxassetid://6372946701"
+	U:Play()
+	wait(10)
+	U:Destroy()
+end
+coroutine.wrap(VCRU_fake_script)()
+local function PHNFFPO_fake_script() -- MultiTool.Draggable 
+	local script = Instance.new('LocalScript', MultiTool)
+
+	local UserInputService = game:GetService("UserInputService")local gui = script.Parent local dragging local dragInput local dragStart local startPos local function update(input)local delta = input.Position - dragStart gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)end gui.InputBegan:Connect(function(input)if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then dragging = true dragStart = input.Position startPos = gui.Position input.Changed:Connect(function()if input.UserInputState == Enum.UserInputState.End then dragging = false end end)end end)gui.InputChanged:Connect(function(input)if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then dragInput = input end end)UserInputService.InputChanged:Connect(function(input)if input == dragInput and dragging then update(input)end end)
+end
+coroutine.wrap(PHNFFPO_fake_script)()
+local function GCMOPEU_fake_script() -- MultiTool.Console 
+	local script = Instance.new('LocalScript', MultiTool)
+
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/GrumpyNem0/DeadZoneui/main/ConsoleChatWhatever'))()
+end
+coroutine.wrap(GCMOPEU_fake_script)()
+local function PTRS_fake_script() -- MultiTool.Pressify 
+	local script = Instance.new('LocalScript', MultiTool)
+
+	local UserInputService = game:GetService("UserInputService")
+	UserInputService.InputBegan:Connect(function(InputObject, Processed)
+		if InputObject.KeyCode == Enum.KeyCode.T then
+			if script.Parent.Visible == true then
+				script.Parent.Visible = false
+			else
+				script.Parent.Visible = true
+			end
+		end
+	end)
+end
+coroutine.wrap(PTRS_fake_script)()
