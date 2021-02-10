@@ -7,10 +7,6 @@ while true do
 	}
 
 	game:GetService("ReplicatedStorage").RemoteEvents.Style:FireServer(unpack(args))
-	wait(.1)
-end
-
-while true do
 	--SKINCOLOR
 	local args = {
 		[1] = 1,
@@ -18,10 +14,6 @@ while true do
 	}
 
 	game:GetService("ReplicatedStorage").RemoteEvents.Style:FireServer(unpack(args))
-	wait(.1)
-end
-
-while true do
 	--HAIRCOLOR
 	local args = {
 		[1] = 0,
@@ -29,10 +21,6 @@ while true do
 	}
 
 	game:GetService("ReplicatedStorage").RemoteEvents.Style:FireServer(unpack(args))
-	wait(.1)
-end
-
-while true do
 	--HAIR
 	local args = {
 		[1] = 3,
