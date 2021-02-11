@@ -1,7 +1,11 @@
-game.Players.LocalPlayer.PlayerGui:FindFirstChild("Goggles"):Destroy()
-game.Lighting:FindFirstChild("Sky"):Destroy()
-game.Lighting:FindFirstChild("GlobalCC"):Destroy()
+if game.Players.LocalPlayer.PlayerGui:FindFirstChild("Goggles") then
+    game.Players.LocalPlayer.PlayerGui:FindFirstChild("Goggles"):Destroy()
+end
+if game.Lighting:FindFirstChild("Fog") then
 game.Lighting:FindFirstChild("Fog"):Destroy()
+end
+if game.Lighting:FindFirstChild("ambient") then
 game.Lighting:FindFirstChild("ambient"):Destroy()
+end
 game.Lighting.FogStart = 10000
 game.Lighting.Brightness = 2
