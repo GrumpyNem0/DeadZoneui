@@ -7,5 +7,10 @@ end
 if game.Lighting:FindFirstChild("ambient") then
 game.Lighting:FindFirstChild("ambient"):Destroy()
 end
-game.Lighting.FogStart = 10000
-game.Lighting.Brightness = 2
+_G.DMTFogStart = 1000000
+_G.DMTBrightness = 2
+while true do
+game.Lighting.FogStart = _G.DMTFogStart
+game.Lighting.Brightness = _G.DMTBrightness
+wait()
+end
