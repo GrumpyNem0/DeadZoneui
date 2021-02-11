@@ -592,7 +592,7 @@ coroutine.wrap(SMKN_fake_script)()
 local function PSIYON_fake_script() -- BrightnessUP.BttnScript 
 	local script = Instance.new('LocalScript', BrightnessUP)
 
-	_G.DMTFogStart = 1000000
+	_G.DMTFogStart = 3000
 	_G.DMTBrightness = 2
 	script.parent.MouseButton1Click:Connect(function()
 		_G.DMTBrightness = _G.DMTBrightness+1
